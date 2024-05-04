@@ -75,7 +75,7 @@ function Navbar() {
                 <button className='py-1 lg:px-4 md:px-4 px-2  hover:scale-105 hover:bg-blue-400 transition duration-300 rounded-full bg-blue-300 lg:text-base text-sm text-black font-semibold'>Publish with us</button>
             </div>
 
-            <div className={`lg:hidden ${isOpen && '-translate-y-[0px]'} transition-all duration-300 -translate-y-[400px] z-[-1]  block bg-[#10147e] absolute w-full`}>
+            <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[400px]'} transition-all duration-300  z-[-1]  block bg-[#10147e] absolute w-full`}>
                       <MenuBar navbar={navbar} />
             </div>
         </div>
