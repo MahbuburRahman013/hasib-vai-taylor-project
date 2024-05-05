@@ -55,7 +55,7 @@ function Slider() {
             <div className="lg:w-[50%] xl:pl-5">
                 <h1 className="xl:text-6xl sm:text-5xl text-3xl">{slidData[index]?.title}</h1>
                 <p className="xl:text-4xl sm:text-3xl text-xl mt-10 ">{slidData[index]?.subTitle}</p>
-                <div className="xl:mt-14 mt-10 flex justify-end"><button className="px-5 py-1 bg-blue-300 rounded-full hover:bg-blue-400 transition duration-300 text-black font-semibold">Click Me</button></div>
+                <div className="xl:mt-14 mt-10 flex justify-end"><button className="px-5 py-1 bg-blue-300 rounded-full hover:bg-blue-400 transition duration-300 text-black font-semibold">Read more</button></div>
             </div>
             <button onClick={handleNext} className="text-2xl font-bold absolute lg:right-3 right-1 top-[45%] bg-blue-300 p-1 rounded-full text-black hover:bg-blue-400  transition-all duration-300"><GrFormNext /></button>
             <button onClick={handlePrev} className="text-2xl font-bold absolute lg:left-3 left-1 top-[45%]  bg-blue-300 p-1 rounded-full text-black hover:bg-blue-400 transition-all duration-300"><GrFormPrevious /></button>
