@@ -12,6 +12,19 @@ import MenuBar from './MenuBar';
 function Navbar() {
     const [isTrue, setIsTrue] = useState(true)
     const [isOpen, setIsOpen] = useState(false);
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollY(window.scrollY);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
 
 
@@ -39,8 +52,10 @@ function Navbar() {
     ]
 
 
+
+
     return (
-        <div className=' bg-[#10147e] relative'>
+        <div className={`bg-gradient-to-r from-[#050740] to-[#10147e]  shadow-gray-900 z-10 fixed top-0 w-full ${scrollY && 'shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'} transition-all duration-300`}>
             <div className='container pt-2 mx-auto'>
 
                 <div className='lg:flex justify-end items-center hidden'>
@@ -75,7 +90,7 @@ function Navbar() {
                 <button className='py-1 lg:px-4 md:px-4 px-2  hover:scale-105 hover:bg-blue-400 transition duration-300 rounded-full bg-blue-300 lg:text-base text-sm text-black font-semibold'>Publish with us</button>
             </div>
 
-            <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[400px]'} transition-all duration-300  z-[-1]  block bg-[#10147e] absolute w-full`}>
+            <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[500px]'} transition-all duration-300  block bg-[#10147e] absolute w-full`}>
                       <MenuBar navbar={navbar} />
             </div>
         </div>

@@ -8,7 +8,7 @@ function MenuBar({ navbar }) {
     return (
         <div className='pb-3'>
             {
-                navbar.map((item, index) => <div className='border-b border-gray-600  px-5 py-2' key={index}><NavLink className='text-white text-xl navLink font-semibold' to={item.navlink} >{item.nav}</NavLink></div>)
+                navbar.map((item, index) => <div className='border-b hover:bg-[#1a1c4c] border-gray-600  px-5 py-2' key={index}><NavLink className='text-white text-xl navLink font-semibold' to={item.navlink} >{item.nav}</NavLink></div>)
             }
 
 

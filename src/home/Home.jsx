@@ -1,9 +1,10 @@
 import React from 'react'
+import Slider from './mainHomePageComponents/Slider'
 
 function Home() {
   return (
-    <div>
-       home
+    <div className='h-screen'>
+       <Slider/>
             
     </div>
   )
