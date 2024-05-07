@@ -36,13 +36,24 @@ function Slider() {
 
     const handleNext = () => {
         if (index < (slidData.length - 1)) {
-            setIndex(index + 1)
+            setisOpen(false)
+            setTimeout(() => {
+                setIndex(index + 1)
+                setisOpen(true)
+            }, 500);
+
         }
     }
 
     const handlePrev = () => {
         if (index > 0) {
-            setIndex(index - 1)
+            setisOpen(false)
+            setTimeout(() => {
+
+                setIndex(index - 1)
+                setisOpen(true)
+
+            }, 500);
         }
     }
 
@@ -52,14 +63,14 @@ function Slider() {
 
     return (
         <div className='lg:mt-28 mt-16 text-white xl:gap-24 gap-10 md:px-24 sm:px-12 px-10 py-10 mx-auto relative flex flex-col-reverse lg:flex-row  items-center justify-between bg-gradient-to-r from-[#050740] to-[#10147e]'>
-            <div className="lg:w-[50%] xl:pl-5">
+            <div className={`lg:w-[50%] xl:pl-5 ${isOpen? 'opacity-100': 'opacity-0'}`}>
                 <h1 className="xl:text-6xl sm:text-5xl text-3xl">{slidData[index]?.title}</h1>
                 <p className="xl:text-4xl sm:text-3xl text-xl mt-10 ">{slidData[index]?.subTitle}</p>
                 <div className="xl:mt-14 mt-10 flex justify-end"><button className="px-5 py-1 bg-blue-300 rounded-full hover:bg-blue-400 transition duration-300 text-black font-semibold">Read more</button></div>
             </div>
             <button onClick={handleNext} className="text-2xl font-bold absolute lg:right-3 right-1 top-[45%] bg-blue-300 p-1 rounded-full text-black hover:bg-blue-400  transition-all duration-300"><GrFormNext /></button>
             <button onClick={handlePrev} className="text-2xl font-bold absolute lg:left-3 left-1 top-[45%]  bg-blue-300 p-1 rounded-full text-black hover:bg-blue-400 transition-all duration-300"><GrFormPrevious /></button>
-            <img className={`rounded-xl transition duration-500 ease-in-out lg:w-[50%]`} src={slidData[index]?.img} alt="" />
+            <img className={`rounded-xl ${isOpen ? 'opacity-100' : 'opacity-0'} transition duration-500 ease-in-out lg:w-[50%]`} src={slidData[index]?.img} alt="" />
 
         </div>
     )
