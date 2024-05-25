@@ -1,6 +1,6 @@
 import React from 'react'
 import { CiSearch } from 'react-icons/ci'
-import { FaSearch, FaUser } from 'react-icons/fa'
+import { FaUser } from 'react-icons/fa'
 import { TiWorld } from 'react-icons/ti'
 import { NavLink } from 'react-router-dom'
 
