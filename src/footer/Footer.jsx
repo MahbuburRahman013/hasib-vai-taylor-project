@@ -12,13 +12,13 @@ function Footer() {
 
     return (
         <div>
-            <div className='bg-[#10147e] text-gray-300 py-7'>
+            <div className='bg-[#ffbe00] text-black py-7'>
                 <div className='container mx-auto flex lg:flex-row flex-col justify-between items-center gap-y-5'>
                     <div className='flex justify-center flex-wrap gap-y-2 items-center'>
-                        <Link className='border-r-2 px-3 text-sm hover:underline'>Contact</Link>
-                        <Link className='border-r-2 px-3 text-sm hover:underline'>Accessibility</Link>
-                        <Link className='border-r-2 px-3 text-sm hover:underline'>Contact</Link>
-                        <Link className='border-r-2 px-3 text-sm hover:underline'>Contact</Link>
+                        <Link className='border-r-2 border-black px-3 text-sm hover:underline'>Contact</Link>
+                        <Link className='border-r-2 border-black px-3 text-sm hover:underline'>Accessibility</Link>
+                        <Link className='border-r-2 border-black px-3 text-sm hover:underline'>Contact</Link>
+                        <Link className='border-r-2 border-black px-3 text-sm hover:underline'>Contact</Link>
                         <Link className=' px-3 text-sm hover:underline'>Terms & Conditions</Link>
                     </div>
                     <div className='flex justify-center items-center text-3xl gap-3'>

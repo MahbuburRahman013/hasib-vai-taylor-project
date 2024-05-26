@@ -88,14 +88,14 @@ function SubjectArea() {
 
   return (
     <div className='container mx-auto px-5 my-16'>
-      <h1 className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-medium font-sans my-16 text-[#090d82]'>Subject Areas & Disciplines</h1>
+      <h1 className='xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-medium font-sans my-16 text-[#a57c00]'>Subject Areas & Disciplines</h1>
 
       <div className='flex xl:flex-row flex-col gap-16'>
         <div className='xl:w-[30%] md:w-[60%] sm:w-[80%] w-full'>
           <div className='overflow-hidden'>
             <img className='w-full  hover:scale-[1.03] transition-all duration-500' src="https://taylorandfrancis.com/wp-content/uploads/2021/01/national-cancer-institute-Cx0LsYrM_Ns-unsplash-768x512.jpg" alt="" />
           </div>
-          <div className='flex justify-center mt-10'><div className='flex justify-center'><button><MdOutlineArrowCircleRight className=' text-[#090d82] text-4xl font-semibold' /></button></div></div>
+          <div className='flex justify-center mt-10'><div className='flex justify-center'><button><MdOutlineArrowCircleRight className=' text-[#a57c00] text-4xl font-semibold' /></button></div></div>
         </div>
 
 

@@ -64,7 +64,7 @@ function Navbar() {
                             <input type="text" name="" id="" className='border-none pl-5 pr-3 rounded-full outline-none w-full' />
                             <button className='bg-blue-300 hover:bg-blue-400 transition-all duration-300 p-2  rounded-full'><CiSearch className='text-xl font-bold' /></button>
                         </div> */}
-                        <div className='text-white text-sm font-semibold flex justify-end w-full items-center gap-3'>
+                        <div className='text-black text-sm font-semibold flex justify-end w-full items-center gap-3'>
                             <button onClick={() => setIsTrue(!isTrue)} className='flex hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md justify-center gap-1 items-center'><FaSearch className='font-bold' />Search</button>
                             <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaUser className='font-bold' />Careers</button>
                             <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button>
@@ -75,7 +75,7 @@ function Navbar() {
             <div className='container flex justify-between items-center pb-6 mx-auto'>
                 <button className='lg:hidden block' onClick={() => setIsOpen(!isOpen)}>
                     {
-                        isOpen ? <RxCross2 className='text-4xl font-bold text-white' /> : <IoMdMenu className='text-4xl font-bold text-white' />
+                        isOpen ? <RxCross2 className='text-4xl font-bold text-black' /> : <IoMdMenu className='text-4xl font-bold text-black' />
                     }
 
                 </button>
