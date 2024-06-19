@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react'
+// @ts-nocheck
+import React, { useEffect, useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { TiWorld } from "react-icons/ti";
-import { NavLink } from 'react-router-dom';
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import MenuBar from './MenuBar';
+import Modal from './mainHomePageComponents/Modal';
 
 
 function Navbar() {
@@ -92,7 +93,8 @@ function Navbar() {
                         <button className='bg-[#A57C00] hover:bg-[#C09B30]  transition-all duration-300 p-2  rounded-full'><CiSearch className='text-xl font-bold text-white' /></button>
                     </div>
                 </div>
-                <button className='py-1 lg:px-4 md:px-4 px-2  hover:scale-105 bg-[#A57C00] hover:bg-[#C09B30] transition duration-300 rounded-full lg:text-base text-sm text-white font-semibold'>Publish with us</button>
+                {/* <button className='py-1 lg:px-4 md:px-4 px-2  hover:scale-105 bg-[#A57C00] hover:bg-[#C09B30] transition duration-300 rounded-full lg:text-base text-sm text-white font-semibold'>Publish with us</button> */}
+                <Modal/>
             </div>
 
             <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[500px]'} transition-all duration-300  block bg-[#FFBE00] absolute w-full`}>
