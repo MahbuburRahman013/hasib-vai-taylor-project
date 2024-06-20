@@ -35,27 +35,27 @@ function Serve() {
 
     const blog2 = [
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2020/07/science-in-hd-research-300x200.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/02/cdc-Vqt9v7v6g44-Practitioners-300x215.jpg',
             title: 'Journal Authors',
             link:'/'
         },
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/green-chameleon-s9CC2SKySJM-unsplash.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/01/national-cancer-institute-Cx0LsYrM_Ns-unsplash-300x200.jpg',
             title: 'Book Authors',
             link:'/'
         },
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/instructors-and-students_800_320.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/11/photo-government-600-300x200.jpg',
             title: 'Journal Editors',
             link:'/'
         },
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/patrick-robert-doyle-OvXht_wi5Ew-unsplash.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/01/hospital_unsplash-300x200.jpg',
             title: 'Book Authors',
             link:'/'
         },
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/02/pexels-anthony-shkraba-4348078s-300x224.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/bg-w79mIrYKcK4-300x66.jpg',
             title: 'Journal Editors',
             link:'/'
         },
@@ -65,17 +65,17 @@ function Serve() {
 
     const blog3 = [
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2020/07/science-in-hd-research-300x200.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/Societies-Web-Header-Photo_v1-768x240.jpg',
             title: 'Journal Authors',
             link:'/'
         },
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/green-chameleon-s9CC2SKySJM-unsplash.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/becca-tapert-GnY_mW1Q6Xc-unsplash.jpg',
             title: 'Book Authors',
             link:'/'
         },
         {
-            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/instructors-and-students_800_320.jpg',
+            img: 'https://taylorandfrancis.com/wp-content/uploads/2019/09/scott-webb-udZnjsCzsE-unsplash.jpg',
             title: 'Journal Editors',
             link:'/'
         },
@@ -100,7 +100,7 @@ function Serve() {
                     {
                         blog1.map((item, index) => {
                             return (
-                                <div key={index} style={{backgroundImage: `url("${item.img}")`}} className='bg-cover bg-no-repeat h-[280px]'>
+                                <div key={index} style={{backgroundImage: `url("${item.img}")`}} className='bg-cover bg-no-repeat md:h-[280px] h-[240px]'>
                                     <div className='bg-[#3333335f] w-full h-full relative'>
                                         <p className='absolute bottom-3 left-0 right-0 mx-auto w-full text-white text-center text-lg font-semibold'>{item.title}</p>
                                     </div>
@@ -115,7 +115,7 @@ function Serve() {
                     {
                         blog2.map((item, index) => {
                             return (
-                                <div key={index} style={{backgroundImage: `url("${item.img}")`}} className='bg-cover bg-no-repeat h-[280px]'>
+                                <div key={index} style={{backgroundImage: `url("${item.img}")`}} className='bg-cover bg-no-repeat md:h-[280px] h-[240px]'>
                                     <div className='bg-[#3333335f] w-full h-full relative'>
                                         <p className='absolute bottom-3 left-0 right-0 mx-auto w-full text-white text-center text-lg font-semibold'>{item.title}</p>
                                     </div>
@@ -130,7 +130,7 @@ function Serve() {
                     {
                         blog3.map((item, index) => {
                             return (
-                                <div key={index} style={{backgroundImage: `url("${item.img}")`}} className='bg-cover bg-no-repeat h-[280px]'>
+                                <div key={index} style={{backgroundImage: `url("${item.img}")`}} className='bg-cover bg-no-repeat md:h-[280px] h-[240px]'>
                                     <div className='bg-[#3333335f] w-full h-full relative'>
                                         <p className='absolute bottom-3 left-0 right-0 mx-auto w-full text-white text-center text-lg font-semibold'>{item.title}</p>
                                     </div>
