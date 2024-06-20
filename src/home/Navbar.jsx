@@ -31,8 +31,8 @@ function Navbar() {
 
     const navbar = [
         {
-            nav: 'Who We Serve',
-            navlink: '/'
+            nav: 'About',
+            navlink: '/about'
         },
         {
             nav: 'Knowedges',
@@ -43,11 +43,19 @@ function Navbar() {
             navlink: '/'
         },
         {
-            nav: 'News',
+            nav: 'News & Events',
             navlink: '/'
         },
         {
-            nav: 'About',
+            nav: 'Who We Serve',
+            navlink: '/who-we-serve'
+        },
+        {
+            nav: 'Contact Us',
+            navlink: '/'
+        },
+        {
+            nav: 'Summit',
             navlink: '/'
         },
     ]
@@ -57,7 +65,7 @@ function Navbar() {
 
     return (
         <div className={`bg-gradient-to-r from-[#FFBE00] to-[#FFCF3F]  z-10 fixed top-0 w-full ${scrollY && 'shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
-            <div className='container pt-2 mx-auto'>
+            <div className='container px-3 pt-2 mx-auto'>
 
                 <div className='lg:flex justify-end items-center hidden'>
                     <div className='w-[71.20%] flex justify-between gap-5 items-start'>
@@ -73,7 +81,7 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className='container flex justify-between items-center pb-6 mx-auto'>
+            <div className='md:container px-3 flex gap-3 flex-wrap justify-between items-center pb-6 mx-auto'>
                 <button className='lg:hidden block' onClick={() => setIsOpen(!isOpen)}>
                     {
                         isOpen ? <RxCross2 className='text-4xl font-bold text-black' /> : <IoMdMenu className='text-4xl font-bold text-black' />
@@ -97,8 +105,8 @@ function Navbar() {
                 <Modal/>
             </div>
 
-            <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[500px]'} transition-all duration-300  block bg-[#FFBE00] absolute w-full`}>
-                <MenuBar navbar={navbar} />
+            <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[600px]'} transition-all duration-300  block bg-[#FFBE00] absolute w-full`}>
+                <MenuBar navbar={navbar} isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
         </div>
     )

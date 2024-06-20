@@ -16,12 +16,12 @@ function CustomModal() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     const titles = [
-        "The Secrets of the Ancient World",
-        "A Journey Through Time",
-        "Innovations That Changed the World",
-        "Mysteries of the Deep Ocean",
-        "Exploring the Final Frontier: Space",
-        "The Rise and Fall of Empires"
+        "Option One",
+        "Option Two",
+        "Option Three",
+        "Option Four",
+        "Option Five",
+        "Option Six"
     ];
 
     return (
@@ -39,8 +39,8 @@ function CustomModal() {
                             const dynamicTitle = title.split(' ').join('-');
 
                                 return (
-                                    <Link to={`/dynamicContent/${dynamicTitle}`} key={index}>
-                                        <Button className='my-3' onClick={onClose}>{title}</Button>
+                                    <Link className='block' to={`/dynamicContent/${dynamicTitle}`} key={index}>
+                                        <Button className='my-3 block' onClick={onClose}>{title}</Button>
                                     </Link>
                                 )
                             })
