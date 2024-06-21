@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { RiArrowRightSLine } from "react-icons/ri";
 import { RxDoubleArrowRight } from "react-icons/rx";
 
@@ -8,15 +8,15 @@ function About() {
     const navbar = [
         {
             nav: 'Company',
-            navlink: '/'
+            navlink: '/about/'
         },
         {
             nav: 'Our brands',
-            navlink: '/'
+            navlink: '/about/our-brands'
         },
         {
             nav: 'Executive leadership team',
-            navlink: '/'
+            navlink: '/about/executive-leadership-team'
         },
         {
             nav: 'Our history',
@@ -79,7 +79,11 @@ function About() {
                 <div className='md:w-[34%] border-t-[8px] border-yellow-500 h-fit bg-slate-100 px-5 py-8'>
                       {
                         navbar.map((item,index)=> {
-                            return <Link to={item.navlink} className='text-sm text-gray-700 mt-2 flex gap-2 hover:underline items-center' key={index}><RxDoubleArrowRight/> {item.nav}</Link>
+                            return <NavLink to={item.navlink} className={`text-sm text-gray-700 mt-2 flex gap-2 hover:underline items-center`}
+                            style={({ isActive }) => {
+                                return isActive ? { textDecoration: "underline" } : {};
+                                }}
+                             key={index}><RxDoubleArrowRight/> {item.nav}</NavLink>
                         })
                       }
                 </div>

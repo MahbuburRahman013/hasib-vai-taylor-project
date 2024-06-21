@@ -4,6 +4,8 @@ import Home from "../home/Home";
 import DynamicContent from "../home/mainHomePageComponents/DynamicContent";
 import About from "../about/About";
 import Serve from "../who-we-serve/Serve";
+import OurBrands from "../about/about-childs/OurBrands";
+import ExecutiveTeam from "../about/about-childs/ExecutiveTeam";
 
 
 
@@ -19,6 +21,14 @@ export const router = createBrowserRouter([
         {
           path:'/about',
           element:<About/>
+        },
+        {
+          path:'/about/our-brands',
+          element:<OurBrands/>
+        },
+        {
+          path:'/about/executive-leadership-team',
+          element:<ExecutiveTeam/>
         },
         {
           path:'/who-we-serve',
