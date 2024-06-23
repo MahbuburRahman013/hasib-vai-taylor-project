@@ -6,15 +6,15 @@ function AboutNav() {
     const navbar = [
         {
             nav: 'Company',
-            navlink: '/'
+            navlink: '/about/'
         },
         {
             nav: 'Our brands',
-            navlink: '/'
+            navlink: '/about/our-brands'
         },
         {
             nav: 'Executive leadership team',
-            navlink: '/'
+            navlink: '/about/executive-leadership-team'
         },
         {
             nav: 'Our history',
@@ -40,7 +40,7 @@ function AboutNav() {
         {
             navbar.map((item,index)=> {
                 return(
-                    <Link key={index} className='block border-b text-nowrap px-5 transition duration-300 hover:text-yellow-600 py-2'>{item.nav}</Link>
+                    <Link to={item?.navlink} key={index} className='block border-b text-nowrap px-5 transition duration-300 hover:text-yellow-600 py-2'>{item.nav}</Link>
                 )
             })
         }

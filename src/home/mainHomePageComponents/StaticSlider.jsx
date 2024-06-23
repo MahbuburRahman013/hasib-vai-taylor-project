@@ -10,12 +10,12 @@ function StaticSlider() {
             navlink: '/about'
         },
         {
-            nav: 'Knowedges',
-            navlink: '/'
+            nav: 'Knowledge',
+            navlink: '/knowledge'
         },
         {
             nav: 'Services',
-            navlink: '/'
+            navlink: '/service'
         },
         {
             nav: 'News & Events',
