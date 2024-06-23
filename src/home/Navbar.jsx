@@ -8,6 +8,7 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import MenuBar from './MenuBar';
 import Modal from './mainHomePageComponents/Modal';
+import {Link} from 'react-router-dom'
 
 
 function Navbar() {
@@ -44,7 +45,7 @@ function Navbar() {
         },
         {
             nav: 'News & Events',
-            navlink: '/'
+            navlink: '/news'
         },
         {
             nav: 'Who We Serve',
@@ -52,7 +53,7 @@ function Navbar() {
         },
         {
             nav: 'Contact Us',
-            navlink: '/'
+            navlink: '/contact-us'
         },
         {
             nav: 'Summit',
@@ -75,7 +76,9 @@ function Navbar() {
                         </div> */}
                         <div className='text-black text-sm font-semibold flex justify-end w-full items-center gap-3'>
                             <button onClick={() => setIsTrue(!isTrue)} className='flex hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md justify-center gap-1 items-center'><FaSearch className='font-bold' />Search</button>
-                            <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaUser className='font-bold' />Careers</button>
+                            <Link to='/careers'>
+                                <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaUser className='font-bold' />Careers</button>
+                            </Link>
                             <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button>
                         </div>
                     </div>
@@ -88,7 +91,7 @@ function Navbar() {
                     }
 
                 </button>
-                <img className='lg:w-64 md:w-52 w-40' src="https://taylorandfrancis.com/wp-content/themes/u_new2tfg/assets/img/structure/logo.svg" alt="" />
+                <img className='lg:w-16 w-12 rounded' src="https://i.ibb.co/NpPrSdh/Whats-App-Image-2024-06-23-at-11-51-18-5bacf376.jpg" alt="" />
                 <div className='lg:flex justify-between items-center w-[50%] mx-auto hidden'>
                     {/* {
                         navbar.map((item, index) => <div className='group' key={index} ><NavLink className='text-white text-xl navLink font-semibold' to={item.navlink} >{item.nav}</NavLink>
@@ -102,7 +105,7 @@ function Navbar() {
                     </div>
                 </div>
                 {/* <button className='py-1 lg:px-4 md:px-4 px-2  hover:scale-105 bg-[#A57C00] hover:bg-[#C09B30] transition duration-300 rounded-full lg:text-base text-sm text-white font-semibold'>Publish with us</button> */}
-                <Modal/>
+                <Modal />
             </div>
 
             <div className={`lg:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[600px]'} transition-all duration-300  block bg-[#FFBE00] absolute w-full`}>

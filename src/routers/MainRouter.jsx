@@ -8,6 +8,11 @@ import OurBrands from "../about/about-childs/OurBrands";
 import ExecutiveTeam from "../about/about-childs/ExecutiveTeam";
 import Knowledge from "../knowledge/Knowledge";
 import Service from "../service/Service";
+import Careers from "../careers/Careers";
+import NotFound from "../home/not-found-page/NotFound";
+import Development from "../home/under-development/Development";
+import Contact from "../contact-us/Contact";
+import News from "../news-and-events/News";
 
 
 
@@ -21,12 +26,28 @@ export const router = createBrowserRouter([
           element:<Home/>
         },
         {
+          path:'/under-development',
+          element: <Development/>
+        },
+        {
           path:'/knowledge',
           element:<Knowledge/>
         },
         {
           path:'/service',
           element:<Service/>
+        },
+        {
+          path:'/contact-us',
+          element:<Contact/>
+        },
+        {
+          path:'/news',
+          element:<News/>
+        },
+        {
+          path:'/careers',
+          element:<Careers/>
         },
         {
           path:'/about',
@@ -49,5 +70,9 @@ export const router = createBrowserRouter([
           element:<DynamicContent/>
         }
       ]
+    },
+    {
+      path:'*',
+      element: <NotFound/>
     },
   ]);

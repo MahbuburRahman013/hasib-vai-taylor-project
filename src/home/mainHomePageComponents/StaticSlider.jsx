@@ -19,7 +19,7 @@ function StaticSlider() {
         },
         {
             nav: 'News & Events',
-            navlink: '/'
+            navlink: '/news'
         },
         {
             nav: 'Who We Serve',
@@ -27,11 +27,11 @@ function StaticSlider() {
         },
         {
             nav: 'Contact Us',
-            navlink: '/'
+            navlink: '/contact-us'
         },
         {
             nav: 'Summit',
-            navlink: '/'
+            navlink: '/under-development'
         },
     ]
 
