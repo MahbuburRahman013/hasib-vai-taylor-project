@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
+import UnderNews from './UnderNews';
 
 
 function News() {
@@ -60,16 +61,16 @@ function News() {
                     {
                         navbar.map((item, index) => {
                             return (
-                                <div className={`px-4 group py-5 text-amber-800 text-lg font-medium border-r-2 relative border-white`} key={index}>
+                                <div className={`px-4 group py-5 text-amber-800 text-lg font-medium hover:text-amber-600 underline border-r-2 relative border-white`} key={index}>
                                     <NavLink to={item?.navlink} >{item?.nav}</NavLink>
-                                    <div className='absolute top-0 h-[6px] group-hover:w-[100%]  w-[0%] mx-auto right-0  transition-all duration-300  bg-amber-500 left-0 '></div>
+                                    <div className='absolute top-0 h-[6px] group-hover:w-[100%]   w-[0%] mx-auto right-0  transition-all duration-300  bg-amber-500 left-0 '></div>
                                 </div>
                             )
                         })
                     }
                 </div>
             </div>
-
+            <UnderNews />
         </div>
     )
 }
