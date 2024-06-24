@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 import UnderNews from './UnderNews';
+import { RxCross2 } from 'react-icons/rx';
+import { IoMdMenu } from 'react-icons/io';
 
 
 function News() {
+
+    const [isOpen, setIsOpen] = useState(true);
 
     const navbar = [
         {
@@ -56,19 +60,39 @@ function News() {
                     </div>
                 </div>
             </div>
-            <div className='bg-gray-200  border-b-amber-600 border-b-[3px] '>
-                <div className='md:container mx-auto px-3 flex justify-start items-center gap-1'>
+            <div className={`bg-gray-200 relative border-b-amber-600 border-b-[3px]`}>
+                <div className='md:container mx-auto px-3 md:flex hidden justify-start items-center gap-1'>
                     {
                         navbar.map((item, index) => {
                             return (
-                                <div className={`px-4 group py-5 text-amber-800 text-lg font-medium hover:text-amber-600 underline border-r-2 relative border-white`} key={index}>
+                                <div className={`px-4  group py-5 text-amber-800 lg:text-lg  font-medium hover:text-amber-600 underline border-r-2 relative border-white`} key={index}>
                                     <NavLink to={item?.navlink} >{item?.nav}</NavLink>
-                                    <div className='absolute top-0 h-[6px] group-hover:w-[100%]   w-[0%] mx-auto right-0  transition-all duration-300  bg-amber-500 left-0 '></div>
+                                    <div className='absolute top-0 h-[6px] group-hover:w-[100%]  w-[0%] mx-auto right-0  transition-all duration-300  bg-amber-500 left-0 '></div>
                                 </div>
                             )
                         })
                     }
                 </div>
+
+                <div onClick={() => setIsOpen(!isOpen)} className='flex justify-between items-center md:hidden py-2 px-3'>
+                    <button className=''>
+                        {
+                            isOpen ? <RxCross2 className='text-4xl font-bold text-black' /> : <IoMdMenu className='text-4xl font-bold text-black' />
+                        }
+
+                    </button>
+                    <h1 className='text-amber-700 font-medium underline'>{isOpen ? 'Close Newsroom Menu' : 'Open Newsroom Menu'}</h1>
+                </div>
+
+                <div className={`md:hidden ${isOpen ? '-translate-y-[0px]' : '-translate-y-[1100px]'} transition-all duration-300 py-5  block bg-[#FFBE00] z-[1] absolute w-full`}>
+                    <div>
+                        {
+                            navbar.map((item, index) => <div key={index}><NavLink className={`border-b ${index == 0 && 'border-t'} group hover:bg-[#ffcf3f] border-gray-600 block px-5 py-2 text-black text-xl navLink font-semibold`} onClick={() => setIsOpen(!isOpen)} to={item.navlink} >{item.nav}</NavLink>
+                            </div>)
+                        }
+                    </div>
+                </div>
+
             </div>
             <UnderNews />
         </div>

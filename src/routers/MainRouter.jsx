@@ -13,6 +13,11 @@ import NotFound from "../home/not-found-page/NotFound";
 import Development from "../home/under-development/Development";
 import Contact from "../contact-us/Contact";
 import News from "../news-and-events/News";
+import AboutCareers from "../careers/AboutCareers";
+import WeHire from "../careers/WeHire";
+import Benefits from "../careers/Benefits";
+import LearnAndDev from "../careers/LearnAndDev";
+import Rewards from "../careers/Rewards";
 
 
 
@@ -47,7 +52,29 @@ export const router = createBrowserRouter([
         },
         {
           path:'/careers',
-          element:<Careers/>
+          element:<Careers/>,
+          children:[
+            {
+              path:'/careers',
+              element: <AboutCareers/>
+            },
+            {
+              path:'/careers/hire',
+              element:<WeHire/>
+            },
+            {
+              path:'/careers/benefits',
+              element:<Benefits/>
+            },
+            {
+              path:'/careers/learn-development',
+              element:<LearnAndDev/>
+            },
+            {
+              path:'/careers/rewards',
+              element:<Rewards/>
+            },
+          ]
         },
         {
           path:'/about',

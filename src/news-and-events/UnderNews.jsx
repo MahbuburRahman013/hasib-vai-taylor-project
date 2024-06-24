@@ -34,13 +34,13 @@ function UnderNews() {
     return (
         <>
             <div className='md:container mx-auto px-3'>
-                <div className='flex justify-between items-center my-10'>
-                    <h1 className='text-3xl font-medium text-amber-700'>Press releases</h1>
-                    <p className='text-lg font-medium underline hover:no-underline cursor-pointer'>View all press releases</p>
+                <div className='flex sm:flex-row flex-col gap-5 justify-between  sm:items-center my-10'>
+                    <h1 className='sm:text-3xl text-2xl font-medium text-amber-700'>Press releases</h1>
+                    <p className='sm:text-lg font-medium underline hover:no-underline cursor-pointer'>View all press releases</p>
                 </div>
 
-                <div className='flex gap-5'>
-                    <div className='w-[66%]'>
+                <div className='flex flex-col xl:flex-row xl:gap-5 gap-20'>
+                    <div className='xl:w-[66%] lg:w-[80%]'>
                         <div className='flex gap-5 items-center'>
                             <p className='text-nowrap text-lg font-medium'>Filter by</p>
                             <select className='w-full border border-gray-300 py-2 px-3 rounded' name="" id="">
@@ -52,18 +52,18 @@ function UnderNews() {
                             </select>
                         </div>
 
-                        <div className='my-10 flex gap-10'>
-                            <div className='relative bg-[url("https://newsroom.taylorandfrancisgroup.com/wp-content/uploads/2024/06/construction-300x200.png")] bg-no-repeat w-[40%] h-60'>
+                        <div className='my-10 flex flex-col md:flex-row gap-10'>
+                            <div className='relative md:mx-0 mx-auto bg-[url("https://newsroom.taylorandfrancisgroup.com/wp-content/uploads/2024/06/construction-300x200.png")] bg-no-repeat md:w-[40%] w-full h-60'>
                                 <p className='bg-gray-50 absolute top-0 left-0 p-1'>Breaking research</p>
                             </div>
-                            <div className='w-[60%] flex flex-col gap-5'>
+                            <div className='md:w-[60%] flex flex-col gap-5'>
                                 <p className='text-sm text-gray-400'>June 20, 2024</p>
                                 <h1 className='text-2xl font-semibold text-amber-700 underline'>Guess work can be taken out of big builds with new ECU application</h1>
                                 <p className='text-lg'>Medium and large-scale construction projects will have a better chance of success if they are able to adhere to a set of success criteria, new research from Edith Cowan University (ECU) found. ECU Lecturer Dr Neda Kiani Mavi has developed a system that could help builders take the guess work out of the feasibility of construction projects. […]</p>
                             </div>
                         </div>
 
-                        <div className='grid grid-cols-3 gap-x-5 gap-y-7'>
+                        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-7'>
                             {
                                 data.map((item, index) => {
                                     return (
@@ -80,7 +80,7 @@ function UnderNews() {
                         </div>
 
                     </div>
-                    <div className='w-[34%]'>
+                    <div className='xl:w-[34%] lg:w-[50%]'>
                         <div className='border-t-2 py-7 border-amber-700'>
                             <h1 className='text-2xl font-semibold text-amber-700'>Embargo Area</h1>
                             <p className='text-lg my-3'><span className='text-blue-900 font-semibold underline cursor-pointer'>Log in</span> to the Embargo Area for exclusive access to breaking research news, ahead of publication.</p>
@@ -109,7 +109,7 @@ function UnderNews() {
                     <p className='text-2xl text-center  text-gray-400'>
                         Taylor & Francis is proud to support the following organisations
                     </p>
-                    <div className='flex justify-between gap-10 flex-wrap items-center mt-5'>
+                    <div className='flex sm:justify-between justify-center gap-10 flex-wrap items-center mt-5'>
                         <img src="https://newsroom.taylorandfrancisgroup.com/wp-content/themes/JTF-child-group/img/logo-the-conversation.png" alt="" />
                         <img src="https://newsroom.taylorandfrancisgroup.com/wp-content/themes/JTF-child-group/img/logo-smc.png" alt="" />
 
@@ -120,8 +120,8 @@ function UnderNews() {
             </div>
             <div className='mt-20 bg-amber-700 py-6'>
                 <div className='flex items-center lg:container mx-auto px-3'>
-                    <p className='text-xl font-medium text-white underline px-2 border-r border-gray-100'>Routledge.com</p>
-                    <p className='text-xl font-medium text-white underline px-2 '>Taylor & Francis Online</p>
+                    <p className='md:text-xl font-medium text-white underline px-2 border-r border-gray-100'>Routledge.com</p>
+                    <p className='md:text-xl font-medium text-white underline px-2 '>Taylor & Francis Online</p>
                 </div>
             </div>
         </>
