@@ -19,6 +19,10 @@ import LearnAndDev from "../careers/LearnAndDev";
 import Rewards from "../careers/Rewards";
 import Diversity from "../careers/Diversity";
 import DynamicContent from "../dynamic-content/DynamicContent";
+import DyHome from "../dynamic-content/DyHome";
+import UnderDynamic from "../dynamic-content/UnderDynamic";
+import DyPress from "../dynamic-content/DyPress";
+import Guidelines from "../dynamic-content/Guidelines";
 
 
 
@@ -99,7 +103,25 @@ export const router = createBrowserRouter([
         },
         {
           path:'/dynamicContent/:title',
-          element:<DynamicContent/>
+          element:<DynamicContent/>,
+          children:[
+            {
+              path:'/dynamicContent/:title/journalist-access',
+              element:<UnderDynamic/>
+            },
+            {
+              path:'/dynamicContent/:title/home',
+              element:<DyHome/>
+            },
+            {
+              path:'/dynamicContent/:title/press-releases',
+              element:<DyPress/>
+            },
+            {
+              path:'/dynamicContent/:title/publishing-guidelines',
+              element:<Guidelines/>
+            },
+          ]
         }
       ]
     },

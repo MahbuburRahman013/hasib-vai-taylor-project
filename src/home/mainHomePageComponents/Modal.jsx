@@ -39,7 +39,7 @@ function CustomModal() {
                             const dynamicTitle = title.split(' ').join('-');
 
                                 return (
-                                    <Link className='block' to={`/dynamicContent/${dynamicTitle}`} key={index}>
+                                    <Link className='block' to={`/dynamicContent/${dynamicTitle}/journalist-access`} key={index}>
                                         <Button className='my-3 block' onClick={onClose}>{title}</Button>
                                     </Link>
                                 )

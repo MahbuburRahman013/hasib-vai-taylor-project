@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { Outlet, useLocation, useParams } from 'react-router-dom';
 import { NavLink } from 'react-router-dom'
 import { RxCross2 } from 'react-icons/rx';
 import { IoMdMenu } from 'react-icons/io';
 import UnderDynamic from './UnderDynamic';
 
 function DynamicContent() {
-  // const {title} = useParams();
-  // const dynamicTitle = title.split('-').join(' ');
+  const {title} = useParams();
+  const dynamicTitle = title.split('-');
   const targetDate = "2024-12-31T23:59:59";
   const {pathname} = useLocation()
 
@@ -55,32 +55,32 @@ function DynamicContent() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navbar = [
-    // {
-    //   nav: 'Home',
-    //   navlink: '/under-development'
-    // },
     {
-      nav: 'Journalist Access',
-      navlink: '/dynamicContent/Option-One'
+      nav: 'Why publish with us',
+      navlink: '/dynamicContent/title/home'
+    },
+    {
+      nav: 'Submit your book proposal',
+      navlink: `/dynamicContent/${title}/journalist-access`
+    },
+    {
+      nav: 'The Publishing Process',
+      navlink: '/dynamicContent/title/press-releases'
+    },
+    {
+      nav: 'Publishing Guidelines',
+      navlink: '/dynamicContent/title/publishing-guidelines'
     },
     // {
-    //   nav: 'Press releases',
+    //   nav: 'Support & Services',
     //   navlink: '/under-development'
     // },
     // {
-    //   nav: 'Guidance for Authors',
+    //   nav: 'Author Resources',
     //   navlink: '/under-development'
     // },
     // {
-    //   nav: 'Guidance for Press Officers',
-    //   navlink: '/under-development'
-    // },
-    // {
-    //   nav: 'Press Office Contacts',
-    //   navlink: '/under-development'
-    // },
-    // {
-    //   nav: 'Press Office Contacts',
+    //   nav: 'Author Affiliate Program',
     //   navlink: '/under-development'
     // },
 
@@ -138,7 +138,8 @@ function DynamicContent() {
 
         </div>
 
-        <UnderDynamic/>
+        
+        <Outlet/>
       </div>
     </div>
   )
