@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../home/Home";
-import DynamicContent from "../home/mainHomePageComponents/DynamicContent";
 import About from "../about/About";
 import Serve from "../who-we-serve/Serve";
 import OurBrands from "../about/about-childs/OurBrands";
@@ -18,6 +17,8 @@ import WeHire from "../careers/WeHire";
 import Benefits from "../careers/Benefits";
 import LearnAndDev from "../careers/LearnAndDev";
 import Rewards from "../careers/Rewards";
+import Diversity from "../careers/Diversity";
+import DynamicContent from "../dynamic-content/DynamicContent";
 
 
 
@@ -73,6 +74,10 @@ export const router = createBrowserRouter([
             {
               path:'/careers/rewards',
               element:<Rewards/>
+            },
+            {
+              path:'/careers/diversity',
+              element:<Diversity/>
             },
           ]
         },

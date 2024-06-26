@@ -67,7 +67,7 @@ function LearnAndDev() {
                                             <img className='w-full rounded-[2rem]' src={item?.img} alt="" />
                                             <p className='text-blue-950 ml-5'>{item?.imgDes}</p>
                                         </div> :
-                                        <div className='w-full flex gap-y-2 justify-self-center items-center flex-col px-20'>
+                                        <div className='w-full flex gap-y-2 justify-self-center items-center flex-col md:px-20 px-3'>
                                             <BiSolidQuoteAltLeft className='md:text-5xl text-3xl text-amber-700' />
                                             <h1 className='md:text-[2.55rem] text-3xl font-semibold text-center text-amber-700'>{item?.imgTitle}</h1>
                                             <BiSolidQuoteAltRight className='md:text-5xl text-3xl text-amber-700' />

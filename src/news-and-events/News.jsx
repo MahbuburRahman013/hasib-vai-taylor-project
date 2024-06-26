@@ -11,7 +11,7 @@ import { IoMdMenu } from 'react-icons/io';
 
 function News() {
 
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const navbar = [
         {

@@ -28,7 +28,7 @@ function Careers() {
         },
         {
             nav: 'Diversity, equity & inclusion',
-            navlink: '/caree'
+            navlink: '/careers/diversity'
         },
 
     ]
@@ -59,7 +59,7 @@ function Careers() {
                                     to={item?.navlink}
                                     key={index}
                                     
-                                    className={`bg-[#ff9800] px-4 py-2 rounded-md md:rounded-t-md text-white font-medium md:w-fit w-full ${pathname === item?.navlink && 'bg-[#ff5722] h-11'}`}
+                                    className={` px-4 py-2 rounded-md md:rounded-t-md text-white font-medium md:w-fit w-full ${pathname === item?.navlink ? 'bg-[#ff5722] h-11' : 'bg-[#ff9800]'}`}
                                 >
                                     <button className=''>{item?.nav}</button>
                                 </NavLink>
