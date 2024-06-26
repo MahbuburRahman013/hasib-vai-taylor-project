@@ -162,9 +162,9 @@ function Contact() {
 
                 </div>
 
-                <div className='md:w-[34%] border-t-[8px] border-yellow-500 h-fit bg-slate-100 px-5 py-8'>
+                {/* <div className='md:w-[34%] border-t-[8px] border-yellow-500 h-fit bg-slate-100 px-5 py-8'>
                     {
-                        navbar.map((item, index) => {
+                        navbar?.map((item, index) => {
                             return (
                                 <div key={index}>
                                     <NavLink to={item.navlink} className={`text-sm text-gray-700 mt-2 flex gap-2 hover:underline items-center`}
@@ -189,7 +189,7 @@ function Contact() {
                             );
                         })
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     )
