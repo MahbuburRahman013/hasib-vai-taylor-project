@@ -7,14 +7,14 @@ function Rewards() {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/Applause-image.png',
             imgDes: '',
             title: 'Applause',
-            des: 'It is really important to us that we all celebrate the great work that happens every day at Taylor & Francis.',
-            underDes: 'Applause, is a points-based program we use for rewards and recognition. Anyone at Taylor & Francis can award points to thank or recognise the efforts of a colleague or team. The points accumulate and can be exchanged for a variety of gifts or vouchers. There is something for everyone.'
+            des: 'It is really important to us that we all celebrate the great work that happens every day at TRC Sapphire Publisher.',
+            underDes: 'Applause, is a points-based program we use for rewards and recognition. Anyone at TRC Sapphire Publisher can award points to thank or recognise the efforts of a colleague or team. The points accumulate and can be exchanged for a variety of gifts or vouchers. There is something for everyone.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/TF-Awards-image.jpg',
-            imgDes: 'Taylor & Francis Awards',
+            imgDes: 'TRC Sapphire Publisher Awards',
             title: 'T&F Awards',
-            des: 'The Taylor & Francis Awards happen in March each year. Colleagues can submit an entry for individuals or teams in any of 17 award categories: All In, Bright Start, Data Driven, Digital Acceleration, Fresher Thinking, Leading the Way, Moving Mountains, Real Results, Standing Ovation, Top Team, Better Together, Informa Spirit, Trusted Partner, Digital Acceleration, Building the Brand, Continuous Improvement, and Faster Forward.',
+            des: 'The TRC Sapphire Publisher Awards happen in March each year. Colleagues can submit an entry for individuals or teams in any of 17 award categories: All In, Bright Start, Data Driven, Digital Acceleration, Fresher Thinking, Leading the Way, Moving Mountains, Real Results, Standing Ovation, Top Team, Better Together, Informa Spirit, Trusted Partner, Digital Acceleration, Building the Brand, Continuous Improvement, and Faster Forward.',
             underDes: ''
         },
         {

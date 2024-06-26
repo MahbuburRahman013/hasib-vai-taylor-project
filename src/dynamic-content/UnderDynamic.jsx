@@ -5,13 +5,13 @@ function UnderDynamic() {
         <div className="flex md:flex-row flex-col gap-10">
             <div className="md:w-[66%]">
                 <h1 className="text-4xl font-medium font-serif ">Submit your book proposal</h1>
-                <h2 className="sm:text-3xl text-2xl mt-5 font-semibold">Taylor & Francis welcomes new book proposals in all the major areas in which we publish.</h2>
+                <h2 className="sm:text-3xl text-2xl mt-5 font-semibold">TRC Sapphire Publisher welcomes new book proposals in all the major areas in which we publish.</h2>
 
                 <p className="my-4">Whether you’re looking to turn your PhD thesis into a book, have an idea for an undergraduate textbook, a teaching resource, a handbook, a scholarly reference book, or are writing a book for a professional audience, we would love to hear from you. Please note that we don’t publish fiction books.</p>
 
                 <h1 className="text-2xl mt-6 mb-4">What to consider before submitting your book proposal</h1>
 
-                <p className="my-4">To give you an idea of what Taylor & Francis are looking for, here are a few questions to think about before getting in touch:</p>
+                <p className="my-4">To give you an idea of what TRC Sapphire Publisher are looking for, here are a few questions to think about before getting in touch:</p>
                 <li><span className="font-semibold">Does your book idea have a USP</span> – a unique selling point – an angle on the topic that is new, interesting, innovative and/or compelling?</li>
 
                 <li><span className="font-semibold">Is there a clear demand for your book </span>from an academic or professional audience and what is it about your book idea that specific readers might want and/or need to read?</li>

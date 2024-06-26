@@ -93,7 +93,7 @@ function Serve() {
             </div>
 
             <div className="md:container mx-auto px-3">
-                <p className='text-lg mt-8 mb-12'>Taylor & Francis, a division of Informa, is a specialist in scholarly research and in helping academic and research communities make new breakthroughs. We curate, produce and publish scholarly research and reference-led content, enabling the latest academic thinking and discovery to be shared and built on.</p>
+                <p className='text-lg mt-8 mb-12'>TRC Sapphire Publisher, a division of Informa, is a specialist in scholarly research and in helping academic and research communities make new breakthroughs. We curate, produce and publish scholarly research and reference-led content, enabling the latest academic thinking and discovery to be shared and built on.</p>
 
                 <h1 className='text-gray-700 text-3xl pb-2 border-gray-300 border-b mb-6'>Academia</h1>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>

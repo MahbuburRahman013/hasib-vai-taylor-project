@@ -9,7 +9,7 @@ function UnderNews() {
         },
         {
             img: 'https://newsroom.taylorandfrancisgroup.com/wp-content/uploads/2024/06/AI-policy-for-researchers-300x141.png',
-            title: 'Taylor & Francis Issues Expanded Guidance on AI Application for Authors, Editors and Reviewers'
+            title: 'TRC Sapphire Publisher Issues Expanded Guidance on AI Application for Authors, Editors and Reviewers'
         },
         {
             img: 'https://newsroom.taylorandfrancisgroup.com/wp-content/uploads/2024/06/An-Integrative-Approach-to-Treating-Eating-Disorders-300x200.png',
@@ -94,7 +94,7 @@ function UnderNews() {
                             <p className='text-lg my-3'>Our media relations managers can <span className='text-blue-900 font-semibold underline cursor-pointer'>connect you</span>  with experts in a range of subject areas across science and humanities, and in publishing</p>
                         </div>
                         <div className='border-t-2 py-7 border-amber-700'>
-                            <h1 className='text-2xl font-semibold text-amber-700'>About Taylor & Francis</h1>
+                            <h1 className='text-2xl font-semibold text-amber-700'>About TRC Sapphire Publisher</h1>
                             <p className='text-lg my-3'><span className='text-blue-900 font-semibold underline cursor-pointer'>Find out more </span> about our brands, history, and corporate responsibility.</p>
                         </div>
                         <div className='border-t-2 py-7 border-amber-700'>
@@ -107,7 +107,7 @@ function UnderNews() {
 
                 <div className='mt-24'>
                     <p className='text-2xl text-center  text-gray-400'>
-                        Taylor & Francis is proud to support the following organisations
+                        TRC Sapphire Publisher is proud to support the following organisations
                     </p>
                     <div className='flex sm:justify-between justify-center gap-10 flex-wrap items-center mt-5'>
                         <img src="https://newsroom.taylorandfrancisgroup.com/wp-content/themes/JTF-child-group/img/logo-the-conversation.png" alt="" />
@@ -121,7 +121,7 @@ function UnderNews() {
             <div className='mt-20 bg-amber-700 py-6'>
                 <div className='flex items-center lg:container mx-auto px-3'>
                     <p className='md:text-xl font-medium text-white underline px-2 border-r border-gray-100'>Routledge.com</p>
-                    <p className='md:text-xl font-medium text-white underline px-2 '>Taylor & Francis Online</p>
+                    <p className='md:text-xl font-medium text-white underline px-2 '>TRC Sapphire Publisher Online</p>
                 </div>
             </div>
         </>

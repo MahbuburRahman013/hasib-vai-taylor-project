@@ -8,7 +8,7 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import MenuBar from './MenuBar';
 import Modal from './mainHomePageComponents/Modal';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function Navbar() {
@@ -91,7 +91,9 @@ function Navbar() {
                     }
 
                 </button>
-                <img className='lg:w-16 w-12 rounded' src="https://i.ibb.co/NpPrSdh/Whats-App-Image-2024-06-23-at-11-51-18-5bacf376.jpg" alt="" />
+                <Link to={'/'}>
+                    <img className='lg:w-16 w-12 rounded' src="https://i.ibb.co/NpPrSdh/Whats-App-Image-2024-06-23-at-11-51-18-5bacf376.jpg" alt="" />
+                </Link>
                 <div className='lg:flex justify-between items-center w-[50%] mx-auto hidden'>
                     {/* {
                         navbar.map((item, index) => <div className='group' key={index} ><NavLink className='text-white text-xl navLink font-semibold' to={item.navlink} >{item.nav}</NavLink>

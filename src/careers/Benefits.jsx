@@ -5,7 +5,7 @@ function Benefits() {
     const data = [
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/Annual-leave-image.jpg',
-            imgDes: 'Taylor & Francis colleague on holiday in Spain',
+            imgDes: 'TRC Sapphire Publisher colleague on holiday in Spain',
             title: 'Paid Annual Leave',
             des: 'We provide all of our colleagues with generous paid leave to spend time away from work. The amount given will be based on where you are in the world and will be confirmed in the advertisement for the role you apply for. All colleagues also get an extra day of leave to celebrate their birthday each year.',
             underDes: 'In many of our locations around the globe, we offer other types of leave to support colleagues with different situations, such as their health, and family and life-related events.'
@@ -26,12 +26,12 @@ function Benefits() {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/WTW-Bridge-Image-1.jpg',
             imgDes: 'Baby’s first visit to the office',
             title: 'Balanced Working',
-            des: 'We understand the importance of work/life balance. Depending on your role at Taylor & Francis, we work with you to find the right balance of working types. ',
+            des: 'We understand the importance of work/life balance. Depending on your role at TRC Sapphire Publisher, we work with you to find the right balance of working types. ',
             underDes: 'Colleagues will mainly be balanced workers. This means you share your time between an office base and working from home. Some people may be predominantly based at home, and others at the office. The balance and requirements for travel and office working will be discussed with you as part of the recruitment process. '
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/Volunteering-image-formatted.jpeg',
-            imgDes: 'Taylor & Francis colleagues on a volunteering day, there was cake…',
+            imgDes: 'TRC Sapphire Publisher colleagues on a volunteering day, there was cake…',
             title: 'Balanced Working',
             des: 'All colleagues receive four paid volunteer days a year, to actively support the communities we live in. It is a great way to develop your skills, work with other colleagues, and have a lasting impact on your community at the same time. Colleagues often say they feel re-energized when they return to work and have learned new things.',
             underDes: ''

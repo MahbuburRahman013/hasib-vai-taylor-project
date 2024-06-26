@@ -6,7 +6,7 @@ function OurBrands() {
     const data = [
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/taylor-francis-blue-280.png',
-            description: 'Taylor & Francis publishes research from the forefront of science, medicine, technology, and engineering. We partner with world-class authors and researchers to bring knowledge to life. Our journals program began in 1798 with the publication of Philosophical Magazine. Since then, the knowledge we’ve published has helped to shape human understanding and drive policy, discoveries, and change. Our publishing program also shares cutting-edge research via digital hubs, video, data publication, impact statements, open citations, and more. We also offer medical communications agencies a wide range of additional publishing solutions, including our market-leading Plain Language Summary service.'
+            description: 'TRC Sapphire Publisher publishes research from the forefront of science, medicine, technology, and engineering. We partner with world-class authors and researchers to bring knowledge to life. Our journals program began in 1798 with the publication of Philosophical Magazine. Since then, the knowledge we’ve published has helped to shape human understanding and drive policy, discoveries, and change. Our publishing program also shares cutting-edge research via digital hubs, video, data publication, impact statements, open citations, and more. We also offer medical communications agencies a wide range of additional publishing solutions, including our market-leading Plain Language Summary service.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/Routledge_wg-blue.png',
@@ -36,7 +36,7 @@ function OurBrands() {
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/screenshot-tfo.jpg',
             description: 'provides access to more than 2,700 high-quality, cross-disciplinary journals spanning Humanities and Social Sciences, Science and Technology, Engineering, Medicine and Healthcare.',
-            link:'Taylor & Francis Online'
+            link:'TRC Sapphire Publisher Online'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/screenshot-tfe.jpg',
@@ -57,11 +57,11 @@ function OurBrands() {
         <div className='lg:mt-48 sm:mt-28 mt-36'>
             <div className='md:container mx-auto px-3'>
                 <p className='text-xl'>
-                    Taylor & Francis is one of the world’s leading publishers of scholarly journals, books, eBooks and reference works. We’ve published over 145,000 book titles, publish 8,000 new books each year, actively publish over 2,700 journals, and partner with more than 700 scholarly societies.
+                    TRC Sapphire Publisher is one of the world’s leading publishers of scholarly journals, books, eBooks and reference works. We’ve published over 145,000 book titles, publish 8,000 new books each year, actively publish over 2,700 journals, and partner with more than 700 scholarly societies.
                 </p>
                 <p className='mt-5'>
                     Our publishing spans humanities and social sciences, behavioral sciences, science and technology, engineering, and medicine and healthcare. Built on an academic publishing heritage of over 200 years, our expertise advances trusted knowledge that fosters human progress.</p>
-                <p className='mt-5'>As well as Taylor & Francis, our brands include Routledge, CRC Press, F1000, Dove Medical Press and PeerJ. We’re also proud to be part of Informa PLC, a world leader in business intelligence, academic publishing, knowledge, and events.</p>
+                <p className='mt-5'>As well as TRC Sapphire Publisher, our brands include Routledge, CRC Press, F1000, Dove Medical Press and PeerJ. We’re also proud to be part of Informa PLC, a world leader in business intelligence, academic publishing, knowledge, and events.</p>
 
 
                 {

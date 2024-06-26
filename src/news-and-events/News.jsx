@@ -18,26 +18,26 @@ function News() {
             nav: 'Home',
             navlink: '/news'
         },
-        {
-            nav: 'Journalist Access',
-            navlink: '/under-development'
-        },
-        {
-            nav: 'Press releases',
-            navlink: '/under-development'
-        },
-        {
-            nav: 'Guidance for Authors',
-            navlink: '/under-development'
-        },
-        {
-            nav: 'Guidance for Press Officers',
-            navlink: '/under-development'
-        },
-        {
-            nav: 'Press Office Contacts',
-            navlink: '/under-development'
-        },
+        // {
+        //     nav: 'Journalist Access',
+        //     navlink: '/under-development'
+        // },
+        // {
+        //     nav: 'Press releases',
+        //     navlink: '/under-development'
+        // },
+        // {
+        //     nav: 'Guidance for Authors',
+        //     navlink: '/under-development'
+        // },
+        // {
+        //     nav: 'Guidance for Press Officers',
+        //     navlink: '/under-development'
+        // },
+        // {
+        //     nav: 'Press Office Contacts',
+        //     navlink: '/under-development'
+        // },
 
     ]
 

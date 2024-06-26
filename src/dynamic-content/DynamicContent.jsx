@@ -55,34 +55,34 @@ function DynamicContent() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navbar = [
-    {
-      nav: 'Home',
-      navlink: '/under-development'
-    },
+    // {
+    //   nav: 'Home',
+    //   navlink: '/under-development'
+    // },
     {
       nav: 'Journalist Access',
       navlink: '/dynamicContent/Option-One'
     },
-    {
-      nav: 'Press releases',
-      navlink: '/under-development'
-    },
-    {
-      nav: 'Guidance for Authors',
-      navlink: '/under-development'
-    },
-    {
-      nav: 'Guidance for Press Officers',
-      navlink: '/under-development'
-    },
-    {
-      nav: 'Press Office Contacts',
-      navlink: '/under-development'
-    },
-    {
-      nav: 'Press Office Contacts',
-      navlink: '/under-development'
-    },
+    // {
+    //   nav: 'Press releases',
+    //   navlink: '/under-development'
+    // },
+    // {
+    //   nav: 'Guidance for Authors',
+    //   navlink: '/under-development'
+    // },
+    // {
+    //   nav: 'Guidance for Press Officers',
+    //   navlink: '/under-development'
+    // },
+    // {
+    //   nav: 'Press Office Contacts',
+    //   navlink: '/under-development'
+    // },
+    // {
+    //   nav: 'Press Office Contacts',
+    //   navlink: '/under-development'
+    // },
 
   ]
 

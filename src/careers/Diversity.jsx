@@ -7,7 +7,7 @@ function Diversity() {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/Stacy-Scott-image-quote-formatted-1024x745.jpg',
             title: '',
             underDesList: [
-                'At Taylor & Francis, we know that diversity is a strength that drives our purpose and our success. We work hard to make sure that Taylor & Francis is a place where we welcome everyone and value difference.',
+                'At TRC Sapphire Publisher, we know that diversity is a strength that drives our purpose and our success. We work hard to make sure that TRC Sapphire Publisher is a place where we welcome everyone and value difference.',
 
                 'This means we are committed to the provision of equal access to opportunity throughout the recruitment process, and at all stages of your career.',
 
@@ -17,9 +17,9 @@ function Diversity() {
             img: 'https://i.ytimg.com/vi/usiKJsoSqxM/sddefault.jpg',
             title: 'How we hire the best talent.',
             underDesList: [
-                'At Taylor & Francis we want to hire, support, and develop the best talent across all communities. We are working hard to identify and remove barriers to inclusion, and we know there is still more to do.',
+                'At TRC Sapphire Publisher we want to hire, support, and develop the best talent across all communities. We are working hard to identify and remove barriers to inclusion, and we know there is still more to do.',
 
-                'We want candidates from all backgrounds to consider applying for jobs at Taylor & Francis To achieve this we know our recruitment process must reflect this intention and be free of any barriers. We welcome any feedback on our approach. (Please contact dei@taylorandfrancis.com)',
+                'We want candidates from all backgrounds to consider applying for jobs at TRC Sapphire Publisher To achieve this we know our recruitment process must reflect this intention and be free of any barriers. We welcome any feedback on our approach. (Please contact dei@taylorandfrancis.com)',
 
                 'Watch the video to find out about the steps we take to attract and hire diverse candidates, and why DE&I is important to us.',
 
@@ -41,7 +41,7 @@ function Diversity() {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/DE-I-Umbrellas-image-1-1024x638.jpeg',
             title: 'How we promote inclusion in the workplace',
             underDesList: [
-                'We know that every colleague has a role to play in making our community thrive through being more diverse and inclusive. There are many change initiatives underway at Taylor & Francis. We organize this work in 3 ways:',
+                'We know that every colleague has a role to play in making our community thrive through being more diverse and inclusive. There are many change initiatives underway at TRC Sapphire Publisher. We organize this work in 3 ways:',
 
                 'Our DE&I Council aligns goals across the different business areas and regions. The Council is sponsored by two members of our Executive Leadership Team.',
 
@@ -101,7 +101,7 @@ function Diversity() {
                     </div>
                     <div className='lg:w-[50%] sm:w-[80%] w-full'>
                         <h1 className='mb-2 font-medium text-amber-600'>
-                            Taylor & Francis DE&I Network Groups
+                            TRC Sapphire Publisher DE&I Network Groups
                         </h1>
                         <li>Accessibility, Disability & Neurodiversity</li>
                         <li>Community Impact Committees and Champions network</li>

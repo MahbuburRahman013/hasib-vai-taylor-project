@@ -18,22 +18,22 @@ function About() {
             nav: 'Executive leadership team',
             navlink: '/about/executive-leadership-team'
         },
-        {
-            nav: 'Our history',
-            navlink: '/'
-        },
+        // {
+        //     nav: 'Our history',
+        //     navlink: '/under-development'
+        // },
         {
             nav: 'Careers',
-            navlink: '/'
+            navlink: '/careers'
         },
-        {
-            nav: 'Our policies',
-            navlink: '/'
-        },
-        {
-            nav: 'Corporate responsibility',
-            navlink: '/'
-        },
+        // {
+        //     nav: 'Our policies',
+        //     navlink: '/under-development'
+        // },
+        // {
+        //     nav: 'Corporate responsibility',
+        //     navlink: '/under-development'
+        // },
     ]
 
 
@@ -41,16 +41,16 @@ function About() {
         <div className='lg:mt-28 mt-16'>
             <div className='bg-[url("https://taylorandfrancis.com/wp-content/uploads/2022/09/header-about-us.jpeg")] bg-cover bg-no-repeat '>
                 <div className='bg-[#00000082]'>
-                    <h1 className='pt-20 pb-5 text-3xl md:container px-3 text-white'>About Taylor & Francis</h1>
-                    <h1 className='py-7 flex  gap-1 items-center md:container px-3 text-white'><Link className='hover:underline' to={'/'}>Home</Link> <RiArrowRightSLine className='text-2xl' /> About Taylor & Francis</h1>
+                    <h1 className='pt-20 pb-5 text-3xl md:container px-3 text-white'>About TRC Sapphire Publisher</h1>
+                    <h1 className='py-7 flex  gap-1 items-center md:container px-3 text-white'><Link className='hover:underline' to={'/'}>Home</Link> <RiArrowRightSLine className='text-2xl' /> About TRC Sapphire Publisher</h1>
                 </div>
             </div>
 
             <div className='flex flex-col-reverse md:flex-row gap-5 sm:container mx-auto px-3 my-8'>
                 <div className='md:w-[66%]'>
-                    <p className='font-bold text-gray-700'>Taylor & Francis is one of the world’s leading academic publishers – and one of its most enduring.</p>
-                    <p className='mt-5 text-gray-700'>For more than two centuries Taylor & Francis has been committed to the highest quality scholarly publishing, and this remains our goal today. Our purpose is to foster human progress through knowledge – something we’ve been doing since the Enlightenment. We aim to promote a positive future for everyone through our work</p>
-                    <p className='mt-5 text-gray-700'>Our imprints include Taylor & Francis, Routledge, CRC Press, F1000 Research, Dovepress and PeerJ. We’ve published over 145,000 book titles, and we actively publish over 2,700 journals.</p>
+                    <p className='font-bold text-gray-700'>TRC Sapphire Publisher is one of the world’s leading academic publishers – and one of its most enduring.</p>
+                    <p className='mt-5 text-gray-700'>For more than two centuries TRC Sapphire Publisher has been committed to the highest quality scholarly publishing, and this remains our goal today. Our purpose is to foster human progress through knowledge – something we’ve been doing since the Enlightenment. We aim to promote a positive future for everyone through our work</p>
+                    <p className='mt-5 text-gray-700'>Our imprints include TRC Sapphire Publisher, Routledge, CRC Press, F1000 Research, Dovepress and PeerJ. We’ve published over 145,000 book titles, and we actively publish over 2,700 journals.</p>
 
                     <h1 className='mt-14 text-3xl text-gray-700'>Our mission</h1>
                     <p className='font-bold mt-5 text-gray-700'>Our mission is to support, validate, and connect the work of researchers and other knowledge makers, so that it can make the fullest possible contribution.</p>
@@ -58,8 +58,8 @@ function About() {
 
                     <h1 className='mt-14 text-3xl text-gray-700'>Our story</h1>
                     <p className='font-bold mt-5 text-gray-700'>We’ve been advancing research and enriching lives since the 18th Century.</p>
-                    <p className='mt-5 text-gray-700'>Taylor & Francis was founded in London in 1852, but our roots go back to 1798 when Richard Taylor launched the Philosophical Magazine, one of the first scientific journals. Routledge, which Taylor & Francis acquired in 1998, was also founded in 1852 and is now considered to be the leading English-language publisher of humanities and social sciences. The merged company has become one of the top five research publishers globally.</p>
-                    <p className='mt-5 text-gray-700'>In 2003 we acquired CRC Press, best known for titles in engineering, materials science, and mathematics. In 2004 Taylor & Francis merged with Informa, and has been its academic publishing division since then.</p>
+                    <p className='mt-5 text-gray-700'>TRC Sapphire Publisher was founded in London in 1852, but our roots go back to 1798 when Richard Taylor launched the Philosophical Magazine, one of the first scientific journals. Routledge, which TRC Sapphire Publisher acquired in 1998, was also founded in 1852 and is now considered to be the leading English-language publisher of humanities and social sciences. The merged company has become one of the top five research publishers globally.</p>
+                    <p className='mt-5 text-gray-700'>In 2003 we acquired CRC Press, best known for titles in engineering, materials science, and mathematics. In 2004 TRC Sapphire Publisher merged with Informa, and has been its academic publishing division since then.</p>
                     <p className='mt-5 text-gray-700'>More recent acquisitions include Dove Medical Press in 2017, which specializes in medical journals. In 2020 we acquired F1000, which provides open research publishing venues that support data deposition and sharing to research funders and institutions. These include the European Commission, Wellcome, and the Bill & Melinda Gates Foundation.</p>
                     <p className='mt-5 text-gray-700'>In 2023 we expanded our medical publishing further with the acquisition of 27 new journals and six digital hubs – online communities for medical and scientific professionals. We also extended our offering of publishing solutions to medical communications agencies, including our market-leading Plain Language Summary service. And in 2024, we acquired PeerJ, an award-winning Open Access science publisher with seven fully Open Access journals in biomedical, life, environmental, physical, and computer sciences.</p>
                     <p className='mt-5 text-gray-700'>Today our brands advance knowledge across humanities and social sciences, science and technology, engineering, medicine, and healthcare.</p>

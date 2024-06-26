@@ -66,7 +66,7 @@ function WeHire() {
                 }
             </div>
             <div className='bg-gray-100 text-amber-800 p-8 rounded-3xl'>
-                <p>Please note that Taylor & Francis is unable to employ anyone who doesn’t have the right to work in the country in which the job is located.</p>
+                <p>Please note that TRC Sapphire Publisher is unable to employ anyone who doesn’t have the right to work in the country in which the job is located.</p>
             </div>
         </div>
     )

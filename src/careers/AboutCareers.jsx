@@ -12,21 +12,21 @@ function AboutCareers() {
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/Books-Image.jpg',
             title: 'Our company',
-            des: 'Taylor & Francis is one of the world’s leading academic publishers, with offices in 14 countries. We publish in a  wide range of disciplines across the humanities and social sciences, behavioural sciences, engineering, science and technology, medicine, and health. We partner with world-class authors and researchers to bring knowledge to life.',
-            underDes: 'As well as Taylor & Francis, our brands include Routledge, CRC Press, F1000 and Dove Medical Press.'
+            des: 'TRC Sapphire Publisher is one of the world’s leading academic publishers, with offices in 14 countries. We publish in a  wide range of disciplines across the humanities and social sciences, behavioural sciences, engineering, science and technology, medicine, and health. We partner with world-class authors and researchers to bring knowledge to life.',
+            underDes: 'As well as TRC Sapphire Publisher, our brands include Routledge, CRC Press, F1000 and Dove Medical Press.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/Lamp_27401245-1024x680.jpeg',
             title: 'Our purpose and beliefs',
             des: 'Our purpose is to foster human progress through knowledge. That means that we encourage and respect different ideas, and we stand by four beliefs that guide everything we do: Truth, diversity of thought, individual potential, and human progress.',
-            underDes: 'We believe in creating a supportive and inclusive working environment where you can succeed. Whoever you are, there is a place for you at Taylor & Francis. '
+            underDes: 'We believe in creating a supportive and inclusive working environment where you can succeed. Whoever you are, there is a place for you at TRC Sapphire Publisher. '
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/image11.png',
             title: 'Our environmental impact',
             des: 'We want our publishing to have a positive impact on society, so our goal is to be a sustainable business. As part of Informa Group:',
             underDesList: [
-                'Taylor & Francis is a certified CarbonNeutral® Company',
+                'TRC Sapphire Publisher is a certified CarbonNeutral® Company',
                 '97% of our offices are powered by renewable energy',
                 '100% of our business travel is carbon offset',
                 'We are making our journal supply chain plastic-free'

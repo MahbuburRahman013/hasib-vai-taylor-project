@@ -10,13 +10,13 @@ function ExecutiveTeam() {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/04/Dami-Patel.png',
             title: 'Supervisory Chair',
             name: 'Dami Patel',
-            des: 'Dami Patel is the Chair of the Supervisory Trio, who are collectively overseeing Taylor & Francis on an interim basis. Dami originally joined the business in 2008 and swiftly advanced to the role of Group HR Director by 2012. She was appointed to the Taylor & Francis Board in January 2015.'
+            des: 'Dami Patel is the Chair of the Supervisory Trio, who are collectively overseeing TRC Sapphire Publisher on an interim basis. Dami originally joined the business in 2008 and swiftly advanced to the role of Group HR Director by 2012. She was appointed to the TRC Sapphire Publisher Board in January 2015.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/Carl-Barnes-Portrait-no-bg-266.png',
             title: 'Supervisory Trio Chief Financial Officer',
             name: 'Carl Barnes',
-            des: 'Carl is the Chief Financial Officer at Taylor & Francis, and has been in this post since 2018. As a strategist, Carl works with colleagues to apply his financial and managerial acumen to remove complexity.'
+            des: 'Carl is the Chief Financial Officer at TRC Sapphire Publisher, and has been in this post since 2018. As a strategist, Carl works with colleagues to apply his financial and managerial acumen to remove complexity.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/Emmet-Dages-Portrait-no-bg-266.png',
@@ -28,13 +28,13 @@ function ExecutiveTeam() {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/04/Debbie-Marshall-2.png',
             title: 'Interim Global HR Director',
             name: 'Debbie Marshall',
-            des: 'Debbie Marshall is Taylor & Francis’ Interim Global HR Director. She has extensive expertise in operational and employment law, as well as over 30 years’ experience in the publishing industry.'
+            des: 'Debbie Marshall is TRC Sapphire Publisher’ Interim Global HR Director. She has extensive expertise in operational and employment law, as well as over 30 years’ experience in the publishing industry.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2021/03/tim-britton-portrait-no-bg-266.png',
             title: 'Chief Strategy Officer',
             name: 'Tim Britton',
-            des: 'Tim Britton joined Taylor & Francis in February 2020 as Chief Strategy Officer to bring increased expertise and focus on company strategy. Tim has a wide range of senior leadership experience from academic publishing and beyond, with a strong focus on growth, research and strategic insight.'
+            des: 'Tim Britton joined TRC Sapphire Publisher in February 2020 as Chief Strategy Officer to bring increased expertise and focus on company strategy. Tim has a wide range of senior leadership experience from academic publishing and beyond, with a strong focus on growth, research and strategic insight.'
         },
     ]
 
@@ -44,7 +44,7 @@ function ExecutiveTeam() {
             <div className='bg-[radial-gradient(#ffeb3b,#ff9800)]'>
                 <div className='bg-[#00000077]'>
                     <h1 className='pt-20 pb-5 text-3xl md:container px-3 text-white'>Executive Leadership Team</h1>
-                    <h1 className='py-7 flex flex-wrap gap-1 items-center md:container px-3 text-white'><Link className='hover:underline' to={'/'}>Home</Link> <RiArrowRightSLine className='text-2xl' /><Link className='hover:underline' to={'/about'}>About Taylor & Francis</Link> <RiArrowRightSLine className='text-2xl' /> Executive Leadership Team</h1>
+                    <h1 className='py-7 flex flex-wrap gap-1 items-center md:container px-3 text-white'><Link className='hover:underline' to={'/'}>Home</Link> <RiArrowRightSLine className='text-2xl' /><Link className='hover:underline' to={'/about'}>About TRC Sapphire Publisher</Link> <RiArrowRightSLine className='text-2xl' /> Executive Leadership Team</h1>
                 </div>
             </div>
 

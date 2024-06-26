@@ -104,7 +104,7 @@ function Contact() {
 
                     <div className='flex flex-col md:flex-row gap-10'>
                         <div className='md:w-[50%]'>
-                            <p>Taylor & Francis Group</p>
+                            <p>TRC Sapphire Publisher Group</p>
                             <p>4 Park Square</p>
                             <p>Milton Park</p>
                             <p>Abingdon</p>
@@ -116,7 +116,7 @@ function Contact() {
                             <p>Email: enquiries@taylorandfrancis.com</p>
                             <p>Facebook: @TaylorandFrancisGroup</p>
                             <p>Twitter: @WeAreTandF</p>
-                            <p>LinkedIn: Taylor & Francis Group</p>
+                            <p>LinkedIn: TRC Sapphire Publisher Group</p>
                         </div>
                     </div>
 

@@ -40,7 +40,7 @@ function StaticSlider() {
             <div className={`lg:w-[50%] xl:pl-5`}>
                 <h1 className="xl:text-6xl font-semibold sm:text-5xl text-3xl">Getting savvy about media literacy</h1>
                 <p className="xl:text-4xl sm:text-3xl text-xl mt-10 ">Navigating a shifting media landscape in the digital age</p>
-                <div className="xl:mt-14 mt-10 flex justify-end"><button className="px-5 py-1 text-white rounded-full bg-[#A57C00] hover:bg-[#C09B30] transition duration-300 font-semibold">Read more</button></div>
+                {/* <div className="xl:mt-14 mt-10 flex justify-end"><button className="px-5 py-1 text-white rounded-full bg-[#A57C00] hover:bg-[#C09B30] transition duration-300 font-semibold">Read more</button></div> */}
             </div>
             <div className={`rounded-xl lg:w-[50%] pt-10`}>
                 <div className='lg:flex flex-wrap gap-9  xl:items-center w-full mx-auto hidden'>

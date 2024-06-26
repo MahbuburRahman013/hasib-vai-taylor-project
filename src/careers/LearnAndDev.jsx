@@ -10,7 +10,7 @@ function LearnAndDev() {
             imgDes: 'Apprentice Day, London, UK',
             title: '',
             des: 'We have a real passion for development, because talented people drive our success.  This means that learning opportunities can be found, not just through training courses, but also through the variety of different projects you will be involved in day-to-day.',
-            underDes: 'Taylor & Francis is a great place for you to learn and develop your career. We have an excellent track record of supporting personal and professional growth.  For us, development is a two-way partnership, and we are committed to helping you take ownership of your career development.'
+            underDes: 'TRC Sapphire Publisher is a great place for you to learn and develop your career. We have an excellent track record of supporting personal and professional growth.  For us, development is a two-way partnership, and we are committed to helping you take ownership of your career development.'
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/LD-Image-2.jpg',
@@ -26,7 +26,7 @@ function LearnAndDev() {
         },
         {
             img: 'https://taylorandfrancis.com/wp-content/uploads/2024/05/LD-Image-3.jpg',
-            imgDes: 'Taylor & Francis Apprentice Day, UK',
+            imgDes: 'TRC Sapphire Publisher Apprentice Day, UK',
             title: 'Our management training',
             des: 'Our management training is tailored to the needs of new, middle and senior managers.',
             underDes: 'Our ‘New Management Development Journey’ is a comprehensive, fully digital development program for current and aspiring managers. Colleagues can access self-paced content from live sessions and share learning experiences with peers.  There is an emphasis on ‘blended learning’ to enhance the experience.'
