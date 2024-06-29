@@ -372,7 +372,7 @@ function Service() {
                 {
                     data.map((HItem, HIndex) => {
                         return (
-                            <div key={HIndex} className='md:my-20 my-14'>
+                            <div key={HIndex} className='md:my-20 bg-[#f3f1f0] p-5 my-14'>
                                 <h1 className='md:text-4xl text-3xl mb-10 font-semibold text-center'>{HItem?.HTitle}</h1>
                                 <p className="my-7 sm:text-xl font-medium">
                                     {HItem?.title}
