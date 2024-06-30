@@ -30,7 +30,7 @@ function Register() {
         createUser(email, password)
             .then(result => {
                 if (result.user) {
-                    axios.post('http://localhost:5000/user', { registerValue })
+                    axios.post('https://hasib-vai-second-project.vercel.app/user', { registerValue })
                         .then(res => {
                             if (res.data.acknowledged) {
                                 toast.success('user created successfully',
