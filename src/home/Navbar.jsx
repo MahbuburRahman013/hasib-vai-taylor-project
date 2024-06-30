@@ -6,6 +6,8 @@ import { FaUser } from "react-icons/fa";
 import { TiWorld } from "react-icons/ti";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
+import { BiSolidLogInCircle } from "react-icons/bi";
+import { FaSignInAlt } from "react-icons/fa";
 import MenuBar from './MenuBar';
 import Modal from './mainHomePageComponents/Modal';
 import { Link } from 'react-router-dom'
@@ -57,7 +59,11 @@ function Navbar() {
         },
         {
             nav: 'Summit',
-            navlink: '/'
+            navlink: '/under-development'
+        },
+        {
+            nav: 'Shop by Subject',
+            navlink: '/under-development'
         },
     ]
 
@@ -80,6 +86,10 @@ function Navbar() {
                                 <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaUser className='font-bold' />Careers</button>
                             </Link>
                             <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button>
+
+                            <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><BiSolidLogInCircle className='font-bold text-[18px]' />Login</button>
+
+                            <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaSignInAlt className='font-bold text-[18px]' />Create Account</button>
                         </div>
                     </div>
                 </div>

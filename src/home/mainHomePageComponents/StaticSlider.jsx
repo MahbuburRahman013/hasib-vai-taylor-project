@@ -33,6 +33,10 @@ function StaticSlider() {
             nav: 'Summit',
             navlink: '/under-development'
         },
+        {
+            nav: 'Shop by Subject',
+            navlink: '/under-development'
+        },
     ]
 
     return (
