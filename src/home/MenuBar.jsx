@@ -4,6 +4,8 @@ import { FaUser } from 'react-icons/fa'
 import { TiWorld } from 'react-icons/ti'
 import { NavLink , Link} from 'react-router-dom'
 import AboutNav from './mainHomePageComponents/AboutNav'
+import { BiSolidLogInCircle } from "react-icons/bi";
+import { FaSignInAlt } from "react-icons/fa";
 
 function MenuBar({ navbar, isOpen, setIsOpen }) {
     return (
@@ -22,6 +24,12 @@ function MenuBar({ navbar, isOpen, setIsOpen }) {
 
             <Link onClick={() => setIsOpen(!isOpen)} to={'/careers'}>
                 <button className='flex text-black  text-base font-semibold border-b border-gray-600 px-5 py-2 hover:bg-[#ffcf3f] p-2 duration-300 transition-all justify-start gap-1 items-center w-full'><FaUser className='font-bold' />Careers</button>
+            </Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to={'/login'}>
+                <button className='flex text-black  text-base font-semibold border-b border-gray-600 px-5 py-2 hover:bg-[#ffcf3f] p-2 duration-300 transition-all justify-start gap-1 items-center w-full'><FaSignInAlt className='font-bold' />Login</button>
+            </Link>
+            <Link onClick={() => setIsOpen(!isOpen)} to={'/register'}>
+                <button className='flex text-black  text-base font-semibold border-b border-gray-600 px-5 py-2 hover:bg-[#ffcf3f] p-2 duration-300 transition-all justify-start gap-1 items-center w-full'><BiSolidLogInCircle className='font-bold' />Create Account</button>
             </Link>
             <button className='flex text-black  text-base font-semibold border-b border-gray-600 px-5 py-2 hover:bg-[#ffcf3f] p-2 duration-300 transition-all justify-start gap-1 items-center w-full'><TiWorld className='font-bold text-[18px]' />Regions</button>
 

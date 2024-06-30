@@ -23,6 +23,9 @@ import DyHome from "../dynamic-content/DyHome";
 import UnderDynamic from "../dynamic-content/UnderDynamic";
 import DyPress from "../dynamic-content/DyPress";
 import Guidelines from "../dynamic-content/Guidelines";
+import Login from "../loginAndRegister/Login";
+import Register from "../loginAndRegister/Register";
+import Dashboard from "../dashboard/Dashboard";
 
 
 
@@ -34,6 +37,14 @@ export const router = createBrowserRouter([
         {
           path:'/',
           element:<Home/>
+        },
+        {
+          path:'/login',
+          element:<Login/>
+        },
+        {
+          path:'/register',
+          element:<Register/>
         },
         {
           path:'/under-development',
@@ -128,5 +139,9 @@ export const router = createBrowserRouter([
     {
       path:'*',
       element: <NotFound/>
+    },
+    {
+      path:'/dashboard',
+      element: <Dashboard/>
     },
   ]);

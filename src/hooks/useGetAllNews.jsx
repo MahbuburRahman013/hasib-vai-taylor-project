@@ -6,7 +6,7 @@ function useGetAllNews() {
    const {data} = useQuery({
     queryKey:['all-news-data'],
     queryFn: async () => {
-        const result = await axios.get('https://hasib-vai-second-project.vercel.app/all-news')
+        const result = await axios.get('http://localhost:5000/all-news')
         return result.data;
     }
    })
