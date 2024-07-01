@@ -37,7 +37,7 @@ function Login() {
 
             })
             .catch(err => {
-                toast.success(err.message ,
+                toast.error(err.message ,
                     {
                         style: {
                             borderRadius: '10px',

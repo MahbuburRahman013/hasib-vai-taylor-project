@@ -26,6 +26,10 @@ import Guidelines from "../dynamic-content/Guidelines";
 import Login from "../loginAndRegister/Login";
 import Register from "../loginAndRegister/Register";
 import Dashboard from "../dashboard/Dashboard";
+import PrivateRouter from "./PrivateRouter";
+import PostBlog from "../dashboard/PostBlog";
+import ManageBlog from "../dashboard/ManageBlog";
+import EditBlog from "../dashboard/EditBlog";
 
 
 
@@ -142,6 +146,21 @@ export const router = createBrowserRouter([
     },
     {
       path:'/dashboard',
-      element: <Dashboard/>
+      element: <PrivateRouter><Dashboard/></PrivateRouter>,
+      children:[
+        {
+          path:'/dashboard',
+          element:<PostBlog/>
+        },
+        {
+          path:'/dashboard/manage-blog',
+          element:<ManageBlog/>
+        },
+        {
+          path:'/dashboard/edit-blog/:id',
+          element:<EditBlog/>,
+          loader:({params})=> fetch(`https://hasib-vai-second-project.vercel.app/news/${params.id}`), 
+        },
+      ]
     },
   ]);

@@ -7,11 +7,13 @@ import { RxDoubleArrowRight } from "react-icons/rx";
 import { Link, useNavigate } from 'react-router-dom'
 import { ContextProvider } from '../auth/AuthProvider';
 import { toast } from 'react-hot-toast'
+import useAxios from '../hooks/useAxios';
 
 function Register() {
     const { createUser } = useContext(ContextProvider);
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate()
+    const axiosPublic = useAxios()
 
     const handleRegister = e => {
         e.preventDefault()
@@ -30,7 +32,7 @@ function Register() {
         createUser(email, password)
             .then(result => {
                 if (result.user) {
-                    axios.post('https://hasib-vai-second-project.vercel.app/user', { registerValue })
+                    axiosPublic.post('/user', { registerValue })
                         .then(res => {
                             if (res.data.acknowledged) {
                                 toast.success('user created successfully',
@@ -49,7 +51,7 @@ function Register() {
                 }
             })
             .catch(err => {
-                toast.success(err.message,
+                toast.error(err.message,
                     {
                         style: {
                             borderRadius: '10px',
