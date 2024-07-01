@@ -11,12 +11,16 @@ import { FaSignInAlt } from "react-icons/fa";
 import MenuBar from './MenuBar';
 import Modal from './mainHomePageComponents/Modal';
 import { Link } from 'react-router-dom'
+import { useContext } from 'react';
+import { ContextProvider } from '../auth/AuthProvider';
+import { MdSpaceDashboard } from "react-icons/md";
 
 
 function Navbar() {
     const [isTrue, setIsTrue] = useState(true)
     const [isOpen, setIsOpen] = useState(false);
     const [scrollY, setScrollY] = useState(0);
+    const { user } = useContext(ContextProvider);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -71,8 +75,8 @@ function Navbar() {
 
 
     return (
-        <div className={`bg-gradient-to-r from-[#FFBE00] to-[#FFCF3F]  z-10 ${isOpen ? 'block' : 'fixed'} top-0 w-full ${scrollY ? 'md:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]': 'md:shadow-none shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
-            <div className='container px-3 pt-2 mx-auto'>
+        <div className={`bg-gradient-to-r from-[#FFBE00] to-[#FFCF3F]  z-10 ${isOpen ? 'block' : 'fixed'} top-0 w-full ${scrollY ? 'md:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]' : 'md:shadow-none shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
+            <div className='container px-3 md:pt-2 pt-4 mx-auto'>
 
                 <div className='lg:flex justify-end items-center hidden'>
                     <div className='w-[71.20%] flex justify-between gap-5 items-start'>
@@ -87,13 +91,22 @@ function Navbar() {
                             </Link>
                             <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button>
 
-                            <Link to={'/login'}>
-                                <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><BiSolidLogInCircle className='font-bold text-[18px]' />Login</button>
-                            </Link>
+                            {
+                                user ?
+                                    <Link to={'/dashboard'}>
+                                        <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><MdSpaceDashboard className='font-bold text-[18px]' />Dashboard</button>
+                                    </Link> :
+                                    <>
+                                        <Link to={'/login'}>
+                                            <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><BiSolidLogInCircle className='font-bold text-[18px]' />Login</button>
+                                        </Link>
 
-                            <Link to={'/register'}>
-                                <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaSignInAlt className='font-bold text-[18px]' />Create Account</button>
-                            </Link>
+                                        <Link to={'/register'}>
+                                            <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaSignInAlt className='font-bold text-[18px]' />Create Account</button>
+                                        </Link>
+                                    </>
+
+                            }
                         </div>
                     </div>
                 </div>
@@ -125,7 +138,7 @@ function Navbar() {
             </div>
 
             <div className={`lg:hidden z-10 ${isOpen ? '-translate-y-[0px]' : '-translate-y-[700px]'} transition-all duration-300  block bg-[#FFBE00] absolute w-full`}>
-                <MenuBar navbar={navbar} isOpen={isOpen} setIsOpen={setIsOpen} />
+                <MenuBar navbar={navbar} user={user} isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
         </div>
     )
