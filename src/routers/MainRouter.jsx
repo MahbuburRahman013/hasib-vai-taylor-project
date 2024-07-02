@@ -30,6 +30,11 @@ import PrivateRouter from "./PrivateRouter";
 import PostBlog from "../dashboard/PostBlog";
 import ManageBlog from "../dashboard/ManageBlog";
 import EditBlog from "../dashboard/EditBlog";
+import Profile from "../dashboard/Profile";
+import Shopper from "../dashboard/Profile-components/Shopper";
+import Author from "../dashboard/Profile-components/Author";
+import Instructor from "../dashboard/Profile-components/Instructor";
+import Shop from "../shop-subject/Shop";
 
 
 
@@ -65,6 +70,10 @@ export const router = createBrowserRouter([
         {
           path:'/contact-us',
           element:<Contact/>
+        },
+        {
+          path:'/shop-by-subject',
+          element:<Shop/>
         },
         {
           path:'/news',
@@ -150,6 +159,24 @@ export const router = createBrowserRouter([
       children:[
         {
           path:'/dashboard',
+          element:<Profile/>,
+          children:[
+            {
+              path:'/dashboard/',
+              element: <Shopper/> 
+            },
+            {
+              path:'/dashboard/author',
+              element: <Author/> 
+            },
+            {
+              path:'/dashboard/instructor',
+              element: <Instructor/> 
+            },
+          ]
+        },
+        {
+          path:'/dashboard/post-blog',
           element:<PostBlog/>
         },
         {

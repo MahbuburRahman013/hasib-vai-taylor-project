@@ -14,8 +14,12 @@ function DNavbar({ isTrue, setIsTrue }) {
 
     const routes = [
         {
-            name: 'Post Blog',
+            name: 'Profile',
             link: '/dashboard'
+        },
+        {
+            name: 'Post Blog',
+            link: '/dashboard/post-blog'
         },
         {
             name: 'Manage Blog',

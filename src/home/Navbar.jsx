@@ -75,7 +75,7 @@ function Navbar() {
 
 
     return (
-        <div className={`bg-gradient-to-r from-[#FFBE00] to-[#FFCF3F]  z-10 ${isOpen ? 'block' : 'fixed'} top-0 w-full ${scrollY ? 'md:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]' : 'md:shadow-none shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
+        <div className={`bg-gradient-to-r from-[#FFBE00] to-[#FFCF3F]  z-10 ${isOpen ? 'fixed' : 'fixed'} top-0 w-full ${scrollY ? 'md:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]' : 'md:shadow-none shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
             <div className='container px-3 md:pt-2 pt-4 mx-auto'>
 
                 <div className='lg:flex justify-end items-center hidden'>

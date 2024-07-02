@@ -58,7 +58,7 @@ function Login() {
             <div className='lg:w-[50%] md:w-[60%] sm:w-[80%] w-full'>
                 <h1 className='md:text-4xl text-3xl font-serif text-center font-medium'>My Account</h1>
                 <div className='md:p-8 p-5 my-8 bg-gray-100 border-t-[7px] border-amber-600 mt-5'>
-                    <h1 className='md:text-2xl text-xl mb-7 text-center'>TRC.COM SIGN IN</h1>
+                    <h1 className='md:text-2xl text-xl mb-7 text-center'>TRC Sapphire Publisher SIGN IN</h1>
 
                     <form onSubmit={handleLogin}>
                         <div className='flex flex-col gap-y-1'>

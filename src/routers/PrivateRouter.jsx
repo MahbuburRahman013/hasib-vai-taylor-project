@@ -4,14 +4,19 @@ import { ContextProvider } from "../auth/AuthProvider";
 
 
 
-function PrivateRouter({children}) {
+function PrivateRouter({ children }) {
     const { user, loading } = useContext(ContextProvider);
     // const role = userRole?.role;
     const navigate = useNavigate()
 
 
     if (loading) {
-        return <div>Loading...</div>
+        return (
+            <div className='min-h-screen w-full flex justify-center items-center bg-gray-50'>
+                <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-300 h-20 w-20"></div>
+                <p className="ml-4 text-xl">Please wait...</p>
+            </div>
+        )
     }
 
     if (user) {

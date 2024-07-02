@@ -16,7 +16,7 @@ function MenuBar({ navbar, isOpen, setIsOpen, user }) {
                     {
                         item.nav === 'About' &&
                         <div className='group-hover:visible invisible absolute top-10 z-10 hover:transition duration-300'>
-                            <AboutNav />
+                            <AboutNav isOpen={isOpen} setIsOpen={setIsOpen} />
                         </div>
                     }
                 </div>)
