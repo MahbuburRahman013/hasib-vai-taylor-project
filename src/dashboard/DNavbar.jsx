@@ -15,13 +15,16 @@ function DNavbar({ isTrue, setIsTrue }) {
     const [userRole] = useGetRole();
     const role = userRole?.role;
 
-    const routes = [
-        {
+    const routes = []
+
+    if(role === 'user'){
+        routes.push( {
             name: 'Profile',
             link: '/dashboard'
-        },
-        
-    ]
+        })
+    }
+
+
 
     if (role === 'admin') {
         routes.push({

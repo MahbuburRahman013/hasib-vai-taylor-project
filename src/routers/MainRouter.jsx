@@ -36,6 +36,8 @@ import Author from "../dashboard/Profile-components/Author";
 import Instructor from "../dashboard/Profile-components/Instructor";
 import Shop from "../shop-subject/Shop";
 import AdminPrivate from "./AdminPrivate";
+import AllNews from "../news-and-events/AllNews";
+import UserPrivate from "./UserPrivate";
 
 
 
@@ -79,6 +81,10 @@ export const router = createBrowserRouter([
         {
           path:'/news',
           element:<News/>
+        },
+        {
+          path:'/news/all-news',
+          element:<AllNews/>
         },
         {
           path:'/careers',
@@ -160,7 +166,7 @@ export const router = createBrowserRouter([
       children:[
         {
           path:'/dashboard',
-          element:<Profile/>,
+          element:<UserPrivate><Profile/></UserPrivate>,
           children:[
             {
               path:'/dashboard/',
@@ -187,7 +193,7 @@ export const router = createBrowserRouter([
         {
           path:'/dashboard/edit-blog/:id',
           element:<AdminPrivate><EditBlog/></AdminPrivate>,
-          loader:({params})=> fetch(`https://hasib-vai-second-project.vercel.app/news/${params.id}`), 
+          loader:({params})=> fetch(`http://localhost:5000/news/${params.id}`), 
         },
       ]
     },

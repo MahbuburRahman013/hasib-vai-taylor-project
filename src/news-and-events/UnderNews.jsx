@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import useGetAllNews from '../hooks/useGetAllNews'
 
 function UnderNews() {
 
-    const [data] = useGetAllNews()
+    const [data] = useGetAllNews(6)
 
 
     return (
@@ -53,6 +54,9 @@ function UnderNews() {
                                 })
                             }
                         </div>
+                        <Link to={'/news/all-news'}>
+                            <p className='mt-10 lg:mt-20 font-semibold text-xl underline hover:text-amber-700'>See More</p>
+                        </Link>
 
                     </div>
                     <div className='xl:w-[34%] lg:w-[50%]'>

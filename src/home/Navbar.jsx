@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react';
 import { ContextProvider } from '../auth/AuthProvider';
 import { MdSpaceDashboard } from "react-icons/md";
+import useGetRole from '../hooks/useGetRole';
 
 
 function Navbar() {
@@ -21,6 +22,8 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollY, setScrollY] = useState(0);
     const { user } = useContext(ContextProvider);
+    const [userRole] = useGetRole()
+    const role = userRole?.role;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -93,7 +96,7 @@ function Navbar() {
 
                             {
                                 user ?
-                                    <Link to={'/dashboard'}>
+                                    <Link to={role === 'admin' ? '/dashboard/post-blog' : '/dashboard'}>
                                         <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><MdSpaceDashboard className='font-bold text-[18px]' />Dashboard</button>
                                     </Link> :
                                     <>
@@ -138,7 +141,7 @@ function Navbar() {
             </div>
 
             <div className={`lg:hidden z-10 ${isOpen ? '-translate-y-[0px]' : '-translate-y-[700px]'} transition-all duration-300  block bg-[#FFBE00] absolute w-full`}>
-                <MenuBar navbar={navbar} user={user} isOpen={isOpen} setIsOpen={setIsOpen} />
+                <MenuBar navbar={navbar} user={user} isOpen={isOpen} setIsOpen={setIsOpen} role={role} />
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ import { BiSolidLogInCircle } from "react-icons/bi";
 import { FaSignInAlt } from "react-icons/fa";
 import { MdSpaceDashboard } from "react-icons/md";
 
-function MenuBar({ navbar, isOpen, setIsOpen, user }) {
+function MenuBar({ navbar, isOpen, setIsOpen, user, role }) {
     return (
         <div className='pb-3'>
             {
@@ -28,7 +28,7 @@ function MenuBar({ navbar, isOpen, setIsOpen, user }) {
             </Link>
             {
                 user ?
-                    <Link onClick={() => setIsOpen(!isOpen)} to={'/dashboard'}>
+                    <Link onClick={() => setIsOpen(!isOpen)} to={role === 'user' ? '/dashboard': '/dashboard/post-blog'}>
                         <button className='flex text-black  text-base font-semibold border-b border-gray-600 px-5 py-2 hover:bg-[#ffcf3f] p-2 duration-300 transition-all justify-start gap-1 items-center w-full'><MdSpaceDashboard  className='font-bold' />Dashboard</button>
                     </Link> :
                     <>

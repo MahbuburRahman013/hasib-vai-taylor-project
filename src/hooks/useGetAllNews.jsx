@@ -2,13 +2,12 @@ import { useQuery } from "@tanstack/react-query"
 import useAxios from "./useAxios"
 
 
-function useGetAllNews() {
+function useGetAllNews(count) {
     const axiosPublic = useAxios();
-
     const { data } = useQuery({
         queryKey: ['all-news-data'],
         queryFn: async () => {
-            const result = await axiosPublic.get('/all-news')
+            const result = await axiosPublic.get(`/all-news?count=${count}`)
             return result.data;
         }
     })
