@@ -67,7 +67,7 @@ function Navbar() {
         },
         {
             nav: 'Shop by Subject',
-            navlink: '/under-development'
+            navlink: '/shop-by-subject'
         },
     ]
 
