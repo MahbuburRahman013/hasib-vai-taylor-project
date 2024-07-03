@@ -193,7 +193,7 @@ export const router = createBrowserRouter([
         {
           path:'/dashboard/edit-blog/:id',
           element:<AdminPrivate><EditBlog/></AdminPrivate>,
-          loader:({params})=> fetch(`http://localhost:5000/news/${params.id}`), 
+          loader:({params})=> fetch(`https://hasib-vai-second-project.vercel.app/news/${params.id}`), 
         },
       ]
     },
