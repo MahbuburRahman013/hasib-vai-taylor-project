@@ -105,10 +105,10 @@ export default function Shop() {
     ];
 
     return (
-        <div className="mt-36 mb-16 px-3 md:container mx-auto">
+        <div className="md:mt-36 mt-[115px] mb-16 px-3 md:container mx-auto">
 
 
-            <div className="container mx-auto flex justify-center items-center mb-10">
+            <div className="lg:container mx-auto flex justify-center items-center mb-10">
                 <div
                     className="flex flex-wrap gap-3"   
                 >
