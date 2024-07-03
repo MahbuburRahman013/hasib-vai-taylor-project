@@ -5,27 +5,35 @@ import Swal from "sweetalert2";
 import { useContext } from 'react';
 import { ContextProvider } from '../auth/AuthProvider';
 import auth from '../firebase.config';
+import useGetRole from '../hooks/useGetRole';
 
 function DNavbar({ isTrue, setIsTrue }) {
 
     const navigate = useNavigate()
     const route = useLocation()
     const { logOutUser } = useContext(ContextProvider);
+    const [userRole] = useGetRole();
+    const role = userRole?.role;
 
     const routes = [
         {
             name: 'Profile',
             link: '/dashboard'
         },
-        {
+        
+    ]
+
+    if (role === 'admin') {
+        routes.push({
             name: 'Post Blog',
             link: '/dashboard/post-blog'
-        },
-        {
+        });
+
+        routes.push({
             name: 'Manage Blog',
             link: '/dashboard/manage-blog'
-        },
-    ]
+        });
+    }
 
     const handleLogOut = () => {
         Swal.fire({

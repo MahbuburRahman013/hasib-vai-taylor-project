@@ -1,13 +1,18 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ContextProvider } from "../auth/AuthProvider";
+import useGetRole from "../hooks/useGetRole";
 
 
 
-function PrivateRouter({ children }) {
+function AdminPrivate({ children }) {
+    const [userRole] = useGetRole()
     const { user, loading } = useContext(ContextProvider);
+    const role = userRole?.role;
     const navigate = useNavigate()
     
+    
+
 
     if (loading) {
         return (
@@ -18,11 +23,11 @@ function PrivateRouter({ children }) {
         )
     }
 
-    if (user) {
+    if (user && role === 'admin') {
         return children
     }
 
     return navigate('/');
 }
 
-export default PrivateRouter
+export default AdminPrivate

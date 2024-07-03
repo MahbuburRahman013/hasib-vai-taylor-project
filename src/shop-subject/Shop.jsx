@@ -133,7 +133,7 @@ export default function Shop() {
 
             <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
                 {isLoading
-                    ? Array.from({ length: 6 }).map((_, index) => (
+                    ? Array.from({ length: 8 }).map((_, index) => (
                         <BookCardPlaceholder key={index} />
                     ))
                     : books.map((book) => (
