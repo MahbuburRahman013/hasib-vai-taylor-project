@@ -80,7 +80,7 @@ function Instructor() {
             <div>
                 {
                     course ?
-                        <div className='text-lg my-4'>
+                        <div className='md:text-lg my-4'>
                             <p className='mt-2'><span className='font-semibold'>Institution</span>: {course?.institution}</p>
                             <p className='mt-2'><span className='font-semibold'>Course Name</span>: {course?.courseName}</p>
                             <p className='mt-2'><span className='font-semibold'>Department</span>: {course?.department}</p>
@@ -101,7 +101,7 @@ function Instructor() {
             {
                 formValue ?
                     <div>
-                        <div className='text-lg my-4'>
+                        <div className='md:text-lg my-4'>
                             <p className='mt-2'><span className='font-semibold'>First Name</span>: {formValue?.firstName}</p>
                             <p className='mt-2'><span className='font-semibold'>Last Name</span>: {formValue?.lastName}</p>
                             <p className='mt-2'><span className='font-semibold'>Email</span>: {formValue?.email}</p>
