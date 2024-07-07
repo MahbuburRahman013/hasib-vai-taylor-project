@@ -7,6 +7,14 @@ import useGetACourse from '../../hooks/useGetACourse';
 import ModalCustom from './Modal';
 import toast from 'react-hot-toast'
 import useGetInstructorForm from '../../hooks/useGetInstructorForm';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+    Box
+} from '@chakra-ui/react'
 
 
 function Instructor() {
@@ -71,10 +79,29 @@ function Instructor() {
         <div className='2xl:w-[50%] xl:w-[70%]'>
 
             <h1 className='border-b-2 border-gray-600 text-[27px] pb-2'>Auto-populate Inspection Copy Form</h1>
-            <p className='text-lg mt-3 text-blue-950 flex items-center gap-1'>
-                <RiInformation2Fill />
-                <span className='uppercase font-semibold'>What will this do?</span>
-            </p>
+
+            <div>
+                <Accordion w={'fit-content'} defaultIndex={[0]} allowMultiple>
+                    <AccordionItem>
+                        <h2>
+                            <AccordionButton sx={{
+                                "&:hover": {
+                                    backgroundColor: "initial",
+                                    color: "initial",
+                                }
+                            }}>
+                                <p className='text-lg mt-3 text-blue-950 flex items-center gap-1'>
+                                    <RiInformation2Fill />
+                                    <span className='uppercase font-semibold'>What will this do?</span>
+                                </p>
+                            </AccordionButton>
+                        </h2>
+                        <AccordionPanel pb={4} sx={{bg:'#fff3cd'}}>
+                        <span className='font-semibold'>To expedite the process of future inspection copy requests,</span> any saved field values below will auto-populate into the corresponding field on the Inspection Copy request form, once signed in.
+                        </AccordionPanel>
+                    </AccordionItem>
+                </Accordion>
+            </div>
 
             <p className='p-2 bg-gray-100 border text-2xl font-semibold mt-5'>University & Course Information</p>
             <div>
@@ -112,7 +139,7 @@ function Instructor() {
                             <p className='mt-2'><span className='font-semibold'>Postal Code</span>: {formValue?.postalCode}</p>
                             <p className='mt-2'><span className='font-semibold'>Street Address</span>: {formValue?.streetAddress}</p>
                             <p className='mt-2'><span className='font-semibold'>Teaching Credentials</span>: {formValue?.teachingCredentials}</p>
-                            
+
                         </div>
                     </div>
                     :
