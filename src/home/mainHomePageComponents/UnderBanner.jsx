@@ -72,7 +72,7 @@ function UnderBanner() {
         <>
             <div className='my-10 container mx-auto 2xl:px-36 xl:px-10 px-3 flex lg:flex-row flex-col justify-between lg:gap-10  gap-5 '>
                 <div className='xl:w-[35%] w-full'>
-                    <h1 className='text-2xl mb-3 font-bold text-center'>Core Values:</h1>
+                    <h1 className='text-3xl text-[#a57c00] mb-3 font-bold  text-center'>Core Values:</h1>
                     {
                         data.map((item, index) => <div className='p-6 flex gap-5 bg-[#ffbf003a] hover:bg-[#fdfdfd] transition-all duration-200 mb-[2px] justify-between' key={index}>
                             <div className='md:text-5xl text-4xl text-[#a57c00] font-semibold'>{item.icon}</div>
