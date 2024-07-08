@@ -78,7 +78,7 @@ function Navbar() {
 
 
     return (
-        <div className={`bg-gradient-to-r from-[#ffb80e] to-[#f36f02] border-b border-gray-400 z-10 ${isOpen ? 'fixed' : 'fixed'} top-0 w-full ${scrollY ? 'md:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]' : 'md:shadow-none shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
+        <div className={`bg-gradient-to-r from-[#ffb80e] from-[50%] to-[#f36f02] z-10 ${isOpen ? 'fixed' : 'fixed'} top-0 w-full ${scrollY ? 'md:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]' : 'md:shadow-none shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] shadow-gray-[#a6a6a62b]'} transition-all duration-300`}>
             <div className='container px-3 md:pt-2 pt-4 mx-auto'>
 
                 <div className='lg:flex justify-end items-center hidden'>
@@ -89,9 +89,9 @@ function Navbar() {
                         </div> */}
                         <div className='text-black text-sm font-semibold flex justify-end w-full items-center gap-3'>
                             <button onClick={() => setIsTrue(!isTrue)} className='flex hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md justify-center gap-1 items-center'><FaSearch className='font-bold' />Search</button>
-                            <Link to='/careers'>
+                            {/* <Link to='/careers'>
                                 <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaUser className='font-bold' />Careers</button>
-                            </Link>
+                            </Link> */}
                             <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button>
 
                             {

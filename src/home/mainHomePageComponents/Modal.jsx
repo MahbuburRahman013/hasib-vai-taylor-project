@@ -16,12 +16,12 @@ function CustomModal() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     const titles = [
-        "Option One",
-        "Option Two",
-        "Option Three",
-        "Option Four",
-        "Option Five",
-        "Option Six"
+        "Subject",
+        "Subject",
+        "Subject",
+        "Subject",
+        "Subject",
+        "Subject",
     ];
 
     return (
@@ -30,7 +30,7 @@ function CustomModal() {
             <Modal isOpen={isOpen} onClose={onClose}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>Modal Title</ModalHeader>
+                    <ModalHeader>Choose Subject From Below</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
                         {
@@ -40,7 +40,7 @@ function CustomModal() {
 
                                 return (
                                     <Link className='block' to={`/dynamicContent/${dynamicTitle}/journalist-access`} key={index}>
-                                        <Button className='my-3 block' onClick={onClose}>{title}</Button>
+                                        <Button className='my-3 block' onClick={onClose}>{title}-{index+1}</Button>
                                     </Link>
                                 )
                             })

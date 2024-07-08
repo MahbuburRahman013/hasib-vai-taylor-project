@@ -23,9 +23,9 @@ function MenuBar({ navbar, isOpen, setIsOpen, user, role }) {
             }
 
 
-            <Link onClick={() => setIsOpen(!isOpen)} to={'/careers'}>
+            {/* <Link onClick={() => setIsOpen(!isOpen)} to={'/careers'}>
                 <button className='flex text-black  text-base font-semibold border-b border-gray-600 px-5 py-2 hover:bg-[#ffcf3f] p-2 duration-300 transition-all justify-start gap-1 items-center w-full'><FaUser className='font-bold' />Careers</button>
-            </Link>
+            </Link> */}
             {
                 user ?
                     <Link onClick={() => setIsOpen(!isOpen)} to={role === 'user' ? '/dashboard': '/dashboard/post-blog'}>
