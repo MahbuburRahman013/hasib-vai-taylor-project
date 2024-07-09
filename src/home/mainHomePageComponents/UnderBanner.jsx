@@ -3,8 +3,12 @@ import { AiOutlineFileSearch } from "react-icons/ai";
 import { PiBookOpenTextThin } from "react-icons/pi";
 import { GrPersonalComputer } from "react-icons/gr";
 import { FaDotCircle } from "react-icons/fa";
+import { useState } from 'react';
+import { storage } from '../../firebase.config';
+import toast from 'react-hot-toast';
 
 function UnderBanner() {
+    const [image,setImage] = useState(null);
 
     const data = [
         {
@@ -26,7 +30,7 @@ function UnderBanner() {
 
 
     const data2 = [
-        
+
         {
             img: 'https://i.ibb.co/bWCF7Gp/download.jpg',
             title: 'Academic Excellence',
@@ -66,10 +70,20 @@ function UnderBanner() {
 
     ]
 
+    const upload = ()=> {
+         console.log(image);
+         const imageRef = storage.ref(`/images/${image.name}`).put(image).on("state change", toast('image uploaded successfully'), alert)
+         imageRef();
+    }
+
 
 
     return (
         <>
+            <div>
+                <input onChange={(e)=> setImage(e.target.files[0])} type="file" />
+                <button className='bg-gray-300 mx-5 p-2' onClick={upload}>Upload</button>
+            </div>
             <div className='my-10 container mx-auto 2xl:px-36 xl:px-10 px-3 flex lg:flex-row flex-col justify-between lg:gap-10  gap-5 '>
                 <div className='xl:w-[35%] w-full'>
                     <h1 className='text-3xl text-[#a57c00] mb-3 font-bold  text-center'>Core Values:</h1>
