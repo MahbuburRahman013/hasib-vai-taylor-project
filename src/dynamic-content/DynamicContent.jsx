@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { RxCross2 } from 'react-icons/rx';
 import { IoMdMenu } from 'react-icons/io';
 import UnderDynamic from './UnderDynamic';
+import imgBanner from '../../public/bg-img.jpg'
 
 function DynamicContent() {
   const {title} = useParams();
@@ -61,11 +62,11 @@ function DynamicContent() {
     },
     {
       nav: 'Submit your book proposal',
-      navlink: `/dynamicContent/${title}/journalist-access`
+      navlink: `/dynamicContent/title/journalist-access`
     },
     {
       nav: 'The Publishing Process',
-      navlink: '/dynamicContent/title/press-releases'
+      navlink: `/dynamicContent/${title}/press-releases`
     },
     {
       nav: 'Publishing Guidelines',
@@ -98,7 +99,7 @@ function DynamicContent() {
       </div>
 
       <div className='md:container mx-auto px-3'>
-        <img className='w-full mb-3' src="https://www.routledge.com/rsc/images/crccms/TFG202001-Authors-r3.jpg" alt="" />
+        <img className='w-full h-60 mb-3' src={imgBanner} alt="" />
 
         <div className={`bg-white border mb-5 relative border-gray-300 rounded-md`}>
           <div className='hidden grid-cols-7 md:grid'>

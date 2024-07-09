@@ -38,6 +38,7 @@ import Shop from "../shop-subject/Shop";
 import AdminPrivate from "./AdminPrivate";
 import AllNews from "../news-and-events/AllNews";
 import UserPrivate from "./UserPrivate";
+import SubmitPro from "../submitProposal/SubmitPro";
 
 
 
@@ -65,6 +66,10 @@ export const router = createBrowserRouter([
         {
           path:'/knowledge',
           element:<Knowledge/>
+        },
+        {
+          path:'/submit-your-proposal',
+          element:<SubmitPro/>
         },
         {
           path:'/service',

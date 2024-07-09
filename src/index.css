@@ -5,6 +5,9 @@
   .text-stroke-3 {
     -webkit-text-stroke: 3px rgb(255, 255, 255);
 }
+  .text-stroke-service {
+    -webkit-text-stroke: 2px black;
+}
 
 .customUnderline {
   text-decoration-color: rgb(4, 252, 66);

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { PiBookOpenTextThin } from "react-icons/pi";
 import { GrPersonalComputer } from "react-icons/gr";
@@ -6,6 +6,9 @@ import { FaDotCircle } from "react-icons/fa";
 import { useState } from 'react';
 import { storage } from '../../firebase.config';
 import toast from 'react-hot-toast';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 function UnderBanner() {
     const [image,setImage] = useState(null);
@@ -76,7 +79,10 @@ function UnderBanner() {
          imageRef();
     }
 
-
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh();
+    }, []);
 
     return (
         <>
@@ -84,7 +90,7 @@ function UnderBanner() {
                 <input onChange={(e)=> setImage(e.target.files[0])} type="file" />
                 <button className='bg-gray-300 mx-5 p-2' onClick={upload}>Upload</button>
             </div> */}
-            <div className='my-10 container mx-auto 2xl:px-36 xl:px-10 px-3 flex lg:flex-row flex-col justify-between lg:gap-10  gap-5 '>
+            <div data-aos="fade-right" data-aos-duration="1000" className='my-10 container mx-auto 2xl:px-36 xl:px-10 px-3 flex lg:flex-row flex-col justify-between lg:gap-10  gap-5 '>
                 <div className='xl:w-[35%] w-full'>
                     <h1 className='text-3xl text-[#a57c00] mb-3 font-bold  text-center'>Core Values:</h1>
                     {

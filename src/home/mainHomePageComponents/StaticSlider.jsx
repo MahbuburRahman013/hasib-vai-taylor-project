@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import AboutNav from './AboutNav'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function StaticSlider() {
 
@@ -30,8 +32,8 @@ function StaticSlider() {
             navlink: '/contact-us'
         },
         {
-            nav: 'Summit',
-            navlink: '/under-development'
+            nav: 'Submit Your Proposal',
+            navlink: '/dynamicContent/title/journalist-access'
         },
         // {
         //     nav: 'Shop by Subject',
@@ -39,22 +41,27 @@ function StaticSlider() {
         // },
     ]
 
+    useEffect(() => {
+        Aos.init();
+        Aos.refresh();
+    }, []);
+
     return (
-        <div className='lg:mt-[110px]  text-black xl:gap-24 gap-10 md:px-24 sm:px-12 px-3 2xl:py-36 py-20 mx-auto relative flex flex-col-reverse lg:flex-row  items-start justify-between bg-[url("https://i.ibb.co/Xyc8GJ1/Whats-App-Image-2024-07-08-at-18-25-06-787e55c2.jpg")] bg-right-top bg-no-repeat bg-cover'>
-            <div className={`lg:w-[50%] xl:pl-5`}>
-                <h1 className="xl:text-5xl font-semibold sm:text-5xl text-3xl"><span className='text-8xl block font-extrabold text-[#ffb400] text-stroke-3'>TRC Sapphire Publisher</span><br /><span className='text-[55px]'> Elevating Academic Excellence</span></h1>
-                <p className="sm:text-3xl font-medium text-xl mt-10">Publishing a book is a significant milestone for any author, and choosing the right publisher can make all the difference. Here are ten compelling reasons why publishing your book with TRC Publisher could be a great choice.</p>
+        <div className='lg:mt-[110px]  text-black xl:gap-24 gap-10 md:px-24 sm:px-12 px-3 2xl:py-32 py-20 mx-auto relative flex flex-col-reverse lg:flex-row  items-start justify-between bg-[url("https://i.ibb.co/Xyc8GJ1/Whats-App-Image-2024-07-08-at-18-25-06-787e55c2.jpg")] bg-right-top bg-no-repeat bg-cover'>
+            <div  className={`lg:w-[50%] xl:pl-5`}>
+                <h1  className="xl:text-5xl font-semibold sm:text-5xl text-3xl"><span className='text-8xl block font-extrabold text-[#ffb400] text-stroke-3'>TRC Sapphire Publisher</span><br /><span className='text-[55px]'> Elevating Academic Excellence</span></h1>
+                <p className="sm:text-3xl font-medium text-xl mt-10 px-5 py-3 rounded-md bg-[#ffffff0f] shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">Publishing a book is a significant milestone for any author, and choosing the right publisher can make all the difference. Here are ten compelling reasons why publishing your book with TRC Publisher could be a great choice.</p>
                 {/* <div className="xl:mt-14 mt-10 flex justify-end"><button className="px-5 py-1 text-white rounded-full bg-[#A57C00] hover:bg-[#C09B30] transition duration-300 font-semibold">Read more</button></div> */}
             </div>
-            <div className={`rounded-xl lg:w-[50%] pt-10`}>
+            <div data-aos="fade-up" data-aos-duration="1000" className={`rounded-xl lg:w-[50%] pt-10`}>
                 <div className='lg:flex flex-wrap gap-9  xl:items-center w-full mx-auto hidden'>
                     {
                         navbar.map((item, index) => <div className='group relative' key={index} ><NavLink className='text-black xl:text-2xl navLink font-bold underline decoration-[2.5px]' to={item.navlink} >{item.nav}</NavLink>
                             <span className='w-0 rounded-lg mt-1 h-1 block transition-all duration-500 ease-in-out group-hover:w-full bg-black'></span>
                             {
-                                item.nav === 'About' && 
+                                item.nav === 'About' &&
                                 <div className='group-hover:visible invisible absolute top-10 z-10 hover:transition duration-300'>
-                                    <AboutNav/>
+                                    <AboutNav />
                                 </div>
                             }
                         </div>)

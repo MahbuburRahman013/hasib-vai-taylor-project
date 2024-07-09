@@ -12,7 +12,7 @@ function UnderNews() {
             <div className='md:container mx-auto px-3'>
                 <div className='flex sm:flex-row flex-col gap-5 justify-between  sm:items-center my-10'>
                     <h1 className='sm:text-3xl text-2xl font-medium text-amber-700'>Press releases</h1>
-                    <p className='sm:text-lg font-medium underline hover:no-underline cursor-pointer'>View all press releases</p>
+                    <Link to={'/news/all-news'} className='sm:text-lg font-medium underline hover:no-underline cursor-pointer'>View all press releases</Link>
                 </div>
 
                 <div className='flex flex-col xl:flex-row xl:gap-5 gap-20'>
