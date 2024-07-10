@@ -99,7 +99,7 @@ function Navbar() {
                                 {/* <Link to='/careers'>
                                 <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><FaUser className='font-bold' />Careers</button>
                             </Link> */}
-                                <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button>
+                                {/* <button className='flex justify-center gap-1 hover:bg-[#C09B30] p-2 duration-300 transition-all rounded-md items-center'><TiWorld className='font-bold text-[18px]' />Regions</button> */}
 
                                 {
                                     user ?
