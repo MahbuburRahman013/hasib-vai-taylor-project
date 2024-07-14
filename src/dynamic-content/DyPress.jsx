@@ -84,7 +84,7 @@ function DyPress() {
                         return (
                             <div key={index} className='flex sm:flex-row flex-col gap-3 md:mt-10 mt-7'>
 
-                                <div className='w-[7%] border relative border-gray-400 h-14 rounded-full'>
+                                <div className='sm:w-[7%] w-[50px] border relative border-gray-400 h-14 rounded-full'>
                                     <img className='w-full rounded-full h-full border border-gray-500' src={item?.img} alt="" />
                                     <div className='px-[6px] font-bold absolute rounded-full -top-2 bg-gray-300 w-fit'>
                                         {index + 1}
