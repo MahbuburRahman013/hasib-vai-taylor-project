@@ -95,7 +95,7 @@ function About() {
                     <p className='font-bold text-2xl text-gray-700'>TRC Sapphire Publisher is one of the world’s leading academic publishers – and one of its most enduring.</p>
                     <p className='mt-5 text-gray-700 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md'><span className='font-bold'>TRC Sapphire Publisher</span> stands as a cornerstone in the academic publishing realm, dedicated to advancing knowledge, fostering critical thinking, and amplifying scholarly discourse. With a steadfast commitment to academic excellence, integrity, and innovation, TRC Sapphire Publisher serves as a trusted partner for academics, researchers, and institutions worldwide.</p>
 
-                    <h1 className='mt-14 rounded  text-3xl font-bold  bg-black w-fit text-amber-300 px-2 pb-1'>Mission Statement:</h1>
+                    <h1 className='mt-14 rounded  md:text-3xl text-2xl font-bold  bg-black w-fit text-amber-300 px-2 pb-1'>Mission Statement:</h1>
 
                     {/* <div className='mt-5'>
                    <li className='mt-3'>Our mission at TRC Sapphire Publisher is to facilitate the dissemination of cutting-edge research, scholarly insights, and educational resources that shape the future of academia and society. </li>
@@ -103,14 +103,14 @@ function About() {
                    <li className="mt-3">Publishing a book is a significant milestone for any author, and choosing the right publisher can make all the difference.</li>
                    <li className="mt-3">Converting a thesis into a book is a significant endeavor that requires careful planning, restructuring, and refining to adapt the content for a broader audience and publication format</li>
                    </div> */}
-                    <div className='mt-5 grid grid-cols-2 gap-x-6 gap-y-3'>
+                    <div className='mt-5 grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-3'>
                         <div style={{ backgroundImage: `url("${bgImg}")` }} className='mt-3 px-10 py-7 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-md text-gray-300 font-semibold'>Our mission at TRC Sapphire Publisher is to facilitate the dissemination of cutting-edge research, scholarly insights, and educational resources that shape the future of academia and society. </div>
                         <div className='mt-3 px-10 py-7 font-semibold shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-md'>We are driven by a passion for knowledge and a commitment to empowering scholars to make meaningful contributions to their fields.</div>
                         <div className='mt-3 px-10 font-semibold py-7 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-md'>Publishing a book is a significant milestone for any author, and choosing the right publisher can make all the difference.</div>
                         <div style={{ backgroundImage: `url("${bgImg}")` }} className='mt-3 px-10 py-7 shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-md text-gray-300 font-semibold'>Converting a thesis into a book is a significant endeavor that requires careful planning, restructuring, and refining to adapt the content for a broader audience and publication format</div>
                     </div>
 
-                    <h1 className='mt-28 rounded  text-3xl font-bold  bg-black w-fit text-amber-300 px-3 pb-1'>Why Choose TRC Sapphire Publisher:</h1>
+                    <h1 className='mt-28 rounded  md:text-3xl text-2xl font-bold  bg-black w-fit text-amber-300 px-3 pb-1'>Why Choose TRC Sapphire Publisher:</h1>
                     <p className='mt-5 text-gray-700 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md text-center'>
                         Publishing an academic book is a significant milestone in any scholar's career, and choosing the right publisher is crucial for maximizing the impact and visibility of your work.
                     </p>
@@ -146,10 +146,10 @@ function About() {
                         At TRC Sapphire Publisher, we believe that academic publishing is not just about disseminating knowledge but also about inspiring intellectual curiosity, fostering interdisciplinary dialogue, and shaping the future of scholarship. Join us in our mission to elevate academic excellence and contribute to the advancement of knowledge and understanding in every field of study.
                     </p>
 
-                    <h1 className='mt-20 rounded  text-3xl font-bold  bg-black w-fit text-amber-300 px-2 pb-1'>A commitment to people and knowledge</h1>
+                    <h1 className='mt-20 rounded  md:text-3xl text-2xl font-bold  bg-black w-fit text-amber-300 px-2 pb-1'>A commitment to people and knowledge</h1>
                     <p className='font-bold mt-5 text-gray-700 text-xl'>Knowledge empowers people to think, do, and be more than they ever could before.</p>
                     <p className='mt-5 text-gray-700'>As a global publishing company that believes in making top quality research accessible to more people all around the world, we strive to:</p>
-                    <div className='ml-5 mt-4 gap-5 font-medium grid grid-cols-3'>
+                    <div className='ml-5 mt-4 gap-5 font-medium grid xl:grid-cols-3  grid-cols-1'>
                         <div className=' text-gray-700 px-5 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md'>bring together diverse people, ideas and opinions to publish the experts, theories, and truths that matter</div>
                         <div className=' text-gray-700 px-5 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md'>champion the curious, and give them access to the knowledge and learning they want, the freedom to act upon it, and the trust to use it responsibly</div>
                         <div className=' text-gray-700 px-5 py-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-md'>be a catalyst for meaningful, positive change in society – to enrich all of our lives.</div>

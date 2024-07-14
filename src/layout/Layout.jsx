@@ -15,7 +15,7 @@ function Layout() {
     }, [])
 
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <Navbar />
             <div className={`${pathname === '/' ? '' : 'lg:mt-36'}`}>
                 <Outlet />
