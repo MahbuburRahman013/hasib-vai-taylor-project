@@ -39,6 +39,7 @@ import AdminPrivate from "./AdminPrivate";
 import AllNews from "../news-and-events/AllNews";
 import UserPrivate from "./UserPrivate";
 import SubmitPro from "../submitProposal/SubmitPro";
+import StartReading from "../dynamic-content/start-reading/StartReading";
 
 
 
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
         {
           path:'/register',
           element:<Register/>
+        },
+        {
+          path:'/start-reading',
+          element:<StartReading/>
         },
         {
           path:'/under-development',
@@ -156,7 +161,7 @@ export const router = createBrowserRouter([
             {
               path:'/dynamicContent/:title/publishing-guidelines',
               element:<Guidelines/>
-            },
+            }
           ]
         }
       ]

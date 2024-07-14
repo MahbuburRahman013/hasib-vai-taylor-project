@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 
 function UnderDynamic() {
     return (
@@ -57,20 +57,22 @@ function UnderDynamic() {
                     {/* <img className="w-[75%] mx-auto mt-4" src="https://i.ibb.co/0ykkmPX/cover-how-to-write-a-successful-book-proposal-3.jpg" alt="" /> */}
                     <p className="text-center mt-4">To help you prepare your book proposal, read this <span className="font-semibold">free resource</span> with tips from our global books editorial team.</p>
                     <div className="w-full mt-4 mb-8 flex justify-center items-center">
-                        <button className="bg-amber-700 py-2 w-fit rounded-md px-3 text-xl uppercase text-white">
-                            start reading
-                        </button>
+                        <Link to='/start-reading'>
+                            <button className="bg-amber-700 py-2 w-fit rounded-md px-3 text-xl uppercase text-white">
+                                start reading
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="bg-gray-100 px-5 py-10 border-t-[6px] mt-10 border-t-amber-700 border-b">
                     <h1 className="text-2xl mb-5">Helpful Resources</h1>
                     <div className="underline">
-                    <li>Overview of the publishing process</li>
-                    <li>Overview of our products, customers, and readers</li>
-                    <li>List of Editorial contacts</li>
-                    <li>Proposal guidelines</li>
-                    <li>Book Proposal FAQs</li>
+                        <li>Overview of the publishing process</li>
+                        <li>Overview of our products, customers, and readers</li>
+                        <li>List of Editorial contacts</li>
+                        <li>Proposal guidelines</li>
+                        <li>Book Proposal FAQs</li>
                     </div>
                 </div>
 
