@@ -16,6 +16,12 @@ import BehavioralSciences from "../knowledge/knowledgeChild/child-2/BehaviouralS
 import BuiltEnvironment from "../knowledge/knowledgeChild/child-2/BuiltEnvironment";
 import BusinessManagement from "../knowledge/knowledgeChild/child-2/BusinessManagement";
 import CommunicationStudies from "../knowledge/knowledgeChild/child-2/CommunicationStudies";
+import Economics from "../knowledge/knowledgeChild/child-2/Economics";
+import Education from "../knowledge/knowledgeChild/child-2/Education";
+import Finance from "../knowledge/knowledgeChild/child-2/Finance";
+import Geography from "../knowledge/knowledgeChild/child-2/Geography";
+import GlobalDevelopment from "../knowledge/knowledgeChild/child-2/GlobalDevelopment";
+import HistoryComponent from "../knowledge/knowledgeChild/child-2/History";
 import AddictionTreatmentComponent from "../knowledge/knowledgeChild/child-3/AddictionTreatment";
 import AlliedHealthComponent from "../knowledge/knowledgeChild/child-3/AlliedHealth";
 import AnesthesiologyComponent from "../knowledge/knowledgeChild/child-3/Anesthesiology";
@@ -235,6 +241,30 @@ export const knowledgeChild = [
    {
        path:'/knowledge/Communication-Studies',
        element:<CommunicationStudies/>
+   },
+   {
+       path:'/knowledge/Economics',
+       element:<Economics/>
+   },
+   {
+       path:'/knowledge/Education',
+       element:<Education/>
+   },
+   {
+       path:'/knowledge/Finance',
+       element:<Finance/>
+   },
+   {
+       path:'/knowledge/Geography',
+       element:<Geography/>
+   },
+   {
+       path:'/knowledge/Global-Development',
+       element:<GlobalDevelopment/>
+   },
+   {
+       path:'/knowledge/History',
+       element:<HistoryComponent/>
    },
 ]
 

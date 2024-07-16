@@ -247,32 +247,32 @@ function UnderKnowledge() {
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image9-150x150.png',
             title: 'Economics',
-            link:'/knowledge/'
+            link:'/knowledge/Economics'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image10.png',
             title: 'Education',
-            link:'/knowledge/'
+            link:'/knowledge/Education'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image11-150x150.png',
             title: 'Finance',
-            link:'/knowledge/'
+            link:'/knowledge/Finance'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image12-150x150.png',
             title: 'Geography',
-            link:'/knowledge/'
+            link:'/knowledge/Geography'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image8-150x150.png',
             title: 'Global Development',
-            link:'/knowledge/'
+            link:'/knowledge/Global-Development'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2021/01/icon-history-150x150.png',
             title: 'History',
-            link:'/knowledge/'
+            link:'/knowledge/History'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/10/humanity-150x150-1-150x150.png',
