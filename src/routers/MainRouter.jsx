@@ -40,6 +40,7 @@ import AllNews from "../news-and-events/AllNews";
 import UserPrivate from "./UserPrivate";
 import SubmitPro from "../submitProposal/SubmitPro";
 import StartReading from "../dynamic-content/start-reading/StartReading";
+import { knowledgeChild } from "./KnowledgeChild";
 
 
 
@@ -163,7 +164,8 @@ export const router = createBrowserRouter([
               element:<Guidelines/>
             }
           ]
-        }
+        },
+        ...knowledgeChild
       ]
     },
     {
