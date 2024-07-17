@@ -277,52 +277,52 @@ function UnderKnowledge() {
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/10/humanity-150x150-1-150x150.png',
             title: 'Humanities and Social Sciences',
-            link:'/knowledge/'
+            link:'/knowledge/Humanities-Social-Sciences'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image14-150x150.png',
             title: 'International Relations',
-            link:'/knowledge/'
+            link:'/knowledge/International-Relations'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image15-150x150.png',
             title: 'Language',
-            link:'/knowledge/'
+            link:'/knowledge/Language'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image16-150x150.png',
             title: 'Law',
-            link:'/knowledge/'
+            link:'/knowledge/Law'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image17-150x150.png',
             title: 'Literature',
-            link:'/knowledge/'
+            link:'/knowledge/Literature'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image18-150x150.png',
             title: 'Museum and Heritage Studies',
-            link:'/knowledge/'
+            link:'/knowledge/Museum-Heritage'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/06/icon-Philosophy.png',
             title: 'Philosophy',
-            link:'/knowledge/'
+            link:'/knowledge/Philosophy'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image19-150x150.png',
             title: 'Politics',
-            link:'/knowledge/'
+            link:'/knowledge/Politics'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image20-150x150.png',
             title: 'Psychology',
-            link:'/knowledge/'
+            link:'/knowledge/Psychology'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image21-150x150.png',
             title: 'Religion',
-            link:'/knowledge/'
+            link:'/knowledge/Religion'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2021/01/icon-routledge-encyclopedia-of-modernism-150x150.png',
@@ -337,17 +337,17 @@ function UnderKnowledge() {
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2021/04/icon-sociology-150x150.png',
             title: 'Sociology',
-            link:'/knowledge/'
+            link:'/knowledge/Sociology'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image22-150x150.png',
             title: 'Tourism, Hospitality and Events',
-            link:'/knowledge/'
+            link:'/knowledge/Tourism-Hospitality-Events'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2020/05/image23-150x150.png',
             title: 'Urban Studies',
-            link:'/knowledge/'
+            link:'/knowledge/Urban-Studies'
         },
         {
             iconImg: 'https://taylorandfrancis.com/wp-content/uploads/2021/01/icon-world-whos-who-150x150.png',

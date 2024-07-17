@@ -22,6 +22,19 @@ import Finance from "../knowledge/knowledgeChild/child-2/Finance";
 import Geography from "../knowledge/knowledgeChild/child-2/Geography";
 import GlobalDevelopment from "../knowledge/knowledgeChild/child-2/GlobalDevelopment";
 import HistoryComponent from "../knowledge/knowledgeChild/child-2/History";
+import HumanitiesSocialSciences from "../knowledge/knowledgeChild/child-2/HumanitiesSocialSciences";
+import InternationalRelations from "../knowledge/knowledgeChild/child-2/InternationalRelations";
+import LanguageStudies from "../knowledge/knowledgeChild/child-2/Language";
+import LawStudies from "../knowledge/knowledgeChild/child-2/Law";
+import LiteratureStudies from "../knowledge/knowledgeChild/child-2/Literature";
+import MuseumAndHeritageStudies from "../knowledge/knowledgeChild/child-2/MuseumHeritage";
+import Philosophy from "../knowledge/knowledgeChild/child-2/Philosophy";
+import PoliticsComponent from "../knowledge/knowledgeChild/child-2/Politics";
+import PsychologyComponent from "../knowledge/knowledgeChild/child-2/Psychology";
+import ReligionComponent from "../knowledge/knowledgeChild/child-2/Religion";
+import SociologyComponent from "../knowledge/knowledgeChild/child-2/Sociology";
+import TourismComponent from "../knowledge/knowledgeChild/child-2/TourismHospitalityEvents";
+import UrbanStudiesComponent from "../knowledge/knowledgeChild/child-2/UrbanStudies";
 import AddictionTreatmentComponent from "../knowledge/knowledgeChild/child-3/AddictionTreatment";
 import AlliedHealthComponent from "../knowledge/knowledgeChild/child-3/AlliedHealth";
 import AnesthesiologyComponent from "../knowledge/knowledgeChild/child-3/Anesthesiology";
@@ -265,6 +278,62 @@ export const knowledgeChild = [
    {
        path:'/knowledge/History',
        element:<HistoryComponent/>
+   },
+   {
+       path:'/knowledge/Humanities-Social-Sciences',
+       element:<HumanitiesSocialSciences/>
+   },
+   {
+       path:'/knowledge/International-Relations',
+       element:<InternationalRelations/>
+   },
+   {
+       path:'/knowledge/Language',
+       element:<LanguageStudies/>
+   },
+   {
+       path:'/knowledge/Law',
+       element:<LawStudies/>
+   },
+   {
+       path:'/knowledge/Literature',
+       element:<LiteratureStudies/>
+   },
+   {
+       path:'/knowledge/Museum-Heritage',
+       element:<MuseumAndHeritageStudies/>
+   },
+   {
+       path:'/knowledge/Philosophy',
+       element:<Philosophy/>
+   },
+   {
+       path:'/knowledge/Politics',
+       element:<PoliticsComponent/>
+   },
+   {
+       path:'/knowledge/Psychology',
+       element:<PsychologyComponent/>
+   },
+   {
+       path:'/knowledge/Religion',
+       element:<ReligionComponent/>
+   },
+//    {
+//        path:'/knowledge/Routledge-Encyclopedia-Modernism',
+//        element:<ReligionComponent/>
+//    },
+   {
+       path:'/knowledge/Sociology',
+       element:<SociologyComponent/>
+   },
+   {
+       path:'/knowledge/Tourism-Hospitality-Events',
+       element:<TourismComponent/>
+   },
+   {
+       path:'/knowledge/Urban-Studies',
+       element:<UrbanStudiesComponent/>
    },
 ]
 
