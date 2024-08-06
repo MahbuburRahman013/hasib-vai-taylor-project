@@ -1,9 +1,17 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Books() {
 
-    const arr = [1, 2, 3, 4];
+    const [arr, setArr] = useState([]);
+
+
+    useEffect(() => {
+        fetch('/public/book.json')
+            .then(res => res.json())
+            .then(data => setArr(data))
+    }, [])
 
 
     return (
@@ -14,22 +22,19 @@ function Books() {
                 {
                     arr.map((item, index) => {
                         return (
-                            <Link to='/books/details' key={index} class="bg-white border border-gray-200 hover:shadow-xl transition duration-300 shadow dark:bg-gray-800 dark:border-gray-700 grid md:min-h-[400px] w-[500px] gap-x-3 grid-cols-2 p-3 h-full">
+                            <Link to={`/books/${item?.slug}`} key={index} class="bg-white border border-gray-200 hover:shadow-xl transition duration-300 shadow dark:bg-gray-800 dark:border-gray-700 grid md:min-h-[400px] w-[500px] gap-x-3 grid-cols-2 p-3 h-full">
 
-                                <img class="w-full h-full rounded-md" src="/public/books/DRAFT FULL COPY-images-0 (1)-min.jpg" alt="" />
+                                <img class="w-full h-full rounded-md" src={item?.img} alt="" />
 
                                 <div class="flex flex-col justify-between">
 
                                     <div className='relative'>
                                         <div className='absolute w-full h-full bg-gradient-to-b from-transparent from-60%  to-[#ffffff]'></div>
-                                        <h5 class="mb-2 text-xl font-semibold tracking-tight text-blue-900">Noteworthy technology</h5>
-                                        <p className='mb-5'><span className='text-blue-800'>Asif Mohtab</span> (teacher)</p>
-                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:line-clamp-none line-clamp-4">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
+                                        <h5 class="mb-2 text-xl font-semibold tracking-tight text-blue-900">{item?.title}</h5>
+                                        <p className='mb-5'>{item?.wName}</p>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:line-clamp-6 line-clamp-4 ">{item?.des}</p>
                                     </div>
-                                    <div className='flex justify-center items-center gap-2'>
-                                        <p className='pr-3 border-r'>Hasibul</p>
-                                        <p className=''>Shanto</p>
-                                    </div>
+
                                 </div>
                             </Link>
                         )

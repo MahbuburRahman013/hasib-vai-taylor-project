@@ -61,8 +61,8 @@ export const router = createBrowserRouter([
            element:<Books/>
         },
         {
-           path:'/books/details',
-           element:<BookDetails/>
+           path:'/books/:slug',
+           element:<BookDetails/>,
         },
         {
           path:'/login',

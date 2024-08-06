@@ -1,32 +1,69 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 
 function BookDetails() {
+
+    const [arr, setArr] = useState([]);
+    const { slug } = useParams();
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true)
+        fetch('/public/book.json')
+            .then(res => res.json())
+            .then(data => {
+                const slugData = data.find((book) => book.slug === slug);
+                setArr(slugData);
+                setLoading(false);
+            })
+    }, [])
+
+    if (loading) {
+        return (
+            <>
+
+                <div className='min-h-screen flex justify-center items-center'>
+                    <div role="status">
+                        <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill" />
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+
+                </div>
+
+            </>
+        )
+    }
+
+
     return (
         <div className='mt-20 lg:mt-40 2xl:w-[50%] xl:w-[70%] md:w-[80%]  mx-auto px-3'>
             <div className='flex md:flex-row flex-col justify-between py-5 gap-8'>
                 <div className='relative sm:w-[18%]'>
-                    <img className='sm:w-full sm:h-full' src="https://coverimages.igi-global.com/cover-images/covers/9781668499535.webp" alt="" />
+                    <img className='sm:w-full sm:h-full w-[70%]' src={arr?.img} alt="" />
                     <img className='absolute -bottom-[14px] -left-[10px]' src="https://coverimages.igi-global.com/images/free-preview-arrow.png" alt="" />
                 </div>
                 <div className='sm:w-[82%]'>
-                    <h1 className='text-2xl text-black font-medium'>History and Educational Philosophy for Social Justice and Human Rights</h1>
-                    <p className='mt-3 text-blue-800'>Jahid Siraz Chowdhury, Kumarashwaran Vadevelu, A.F.M. Zakaria, Abdullah Al-Mamun, Sajib Ahmed</p>
+                    <h1 className='text-2xl text-black font-medium'>{arr?.title}</h1>
+                    <p className='mt-3 text-blue-800'>{arr?.wName}</p>
 
                     <div className='text-sm mt-3 flex flex-wrap flex-col'>
-                        <p><span className='text-gray-500'>Indexed In: </span>SCOPUS</p>
+                        <p><span className='text-gray-500'>Indexed In: </span></p>
                         <div className='flex gap-1 flex-wrap [&>p]:border-r '>
-                            <p className='pr-3'><span className='text-gray-500'>Release Date: </span>March, 2024</p>
-                            <p className='px-3'><span className='text-gray-500'>Copyright: </span>© 2024</p>
-                            <p className='px-3'><span className='text-gray-500'>Pages: </span>277</p>
+                            <p className='pr-3'><span className='text-gray-500'>Release Date: </span></p>
+                            <p className='px-3'><span className='text-gray-500'>Copyright: </span></p>
+                            <p className='px-3'><span className='text-gray-500'>Pages: </span></p>
                         </div>
 
-                        <p><span className='text-gray-500'>DOI: </span>10.4018/978-1-6684-9953-5</p>
+                        <p><span className='text-gray-500'>DOI: </span></p>
 
                         <div className='flex gap-1 flex-wrap [&>p]:border-r '>
-                            <p className='pr-3'><span className='text-gray-500'>ISBN13: </span>9781668499535</p>
-                            <p className='px-3'><span className='text-gray-500'>ISBN10: </span>1668499533</p>
-                            <p className='px-3'><span className='text-gray-500'>ISBN13 Softcover: </span>9798369346600</p>
-                            <p className='px-3'><span className='text-gray-500'>EISBN13: </span>9781668499542</p>
+                            <p className='pr-3'><span className='text-gray-500'>ISBN13: </span></p>
+                            <p className='px-3'><span className='text-gray-500'>ISBN10: </span></p>
+                            <p className='px-3'><span className='text-gray-500'>ISBN13 Softcover: </span></p>
+                            <p className='px-3'><span className='text-gray-500'>EISBN13: </span></p>
                         </div>
                     </div>
                 </div>
@@ -34,18 +71,10 @@ function BookDetails() {
             </div>
 
             <div className='mt-10'>
-                <h1 className='bg-gray-500 text-white text-2xl px-3'>Description</h1>
+                <h1 className='bg-gray-500 text-white text-2xl pb-1 px-3'>Description</h1>
 
-                <div className='my-5 [&>p]:my-3 text-sm'>
-                    <p>
-                        In the complex landscape of educational philosophy and policy, a difficult challenge arises — the entwined issues of racism and other demographic differences, and evolving education policies. Traditional historical accounts fall short of addressing the broader historical patterns that underscore these challenges, particularly their colonial legacy. The need for a fresh perspective becomes evident, one that transcends chronology and delves into the intricate dynamics shaping contemporary educational thought.
-                    </p>
-                    <p>
-                    Differences in teaching philosophy have become a contentious focal point, revealing the deep-seated struggles within public institutions, particularly schools. Tensions and conflicts surrounding differences persist both in structuring these institutions and in civil society, necessitating an initiative-taking response. The prevailing skepticism and fatalism regarding the potential of democratic societies, public policies, and education itself are challenges that demand a comprehensive solution. <b>History and Educational Philosophy for Social Justice and Human Rights</b> contends that these tensions are not insurmountable obstacles; rather, they are the very crucibles from which civic-moral learning and an inclusive democracy can emerge.
-                    </p>
-                    <p>
-                    <strong>History and Educational Philosophy for Social Justice and Human Rights</strong> emerges as a groundbreaking solution to this conundrum. Through a broad developmental and historical lens, the book provides a fresh perspective on the role of differences as the core, content, and subject of education. It advocates for cultural resistance and a permanent political struggle by political-cultural minorities and social movements, while also challenging public institutions, especially schools, to actively embrace and utilize differences in their foundational work. By engaging with the tensions and struggles around differences, the book contends that institutions can transform, becoming agents of positive change, and contributing to the foundation of an inclusive and participatory democracy. This book invites scholars and educators to not only understand the challenges but to actively participate in shaping a future where differences are not merely acknowledged but celebrated within the realms of education and society at large.
-                    </p>
+                <div className='my-5 text-sm'>
+                    <p className="mt-5" dangerouslySetInnerHTML={{ __html: arr?.des }}></p>
                 </div>
             </div>
         </div>
