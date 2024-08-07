@@ -31,8 +31,8 @@ function Books() {
                                     <div className='relative'>
                                         <div className='absolute w-full h-full bg-gradient-to-b from-transparent from-60%  to-[#ffffff]'></div>
                                         <h5 class="mb-2 text-xl font-semibold tracking-tight text-blue-900">{item?.title}</h5>
-                                        <p className='mb-5'>{item?.wName}</p>
-                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:line-clamp-6 line-clamp-4 ">{item?.des}</p>
+                                        <p className='mb-5 text-purple-800 font-semibold'>{item?.wName}</p>
+                                        <p dangerouslySetInnerHTML={{ __html: item?.des }} class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:line-clamp-[8] line-clamp-4 "></p>
                                     </div>
 
                                 </div>
