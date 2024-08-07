@@ -8,7 +8,7 @@ function Books() {
 
 
     useEffect(() => {
-        fetch('/public/book.json')
+        fetch('/book.json')
             .then(res => res.json())
             .then(data => setArr(data))
     }, [])
